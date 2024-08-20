@@ -1,1 +1,38 @@
 @import url(fontface.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #071952;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a{
+    font-size: 18px;
+    font-family: Helvetica, Helvetica Neue, Arial, serif;
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #37B7C3;
+}
