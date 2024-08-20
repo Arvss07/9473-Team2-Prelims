@@ -1,0 +1,39 @@
+@import url(fontface.css);
+
+.footer {
+  background-color: #071952;
+  color: #EEEEEE;
+  padding: 20px 5%;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-nav a {
+  color: #EEEEEE;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #37B7C3;
+}
