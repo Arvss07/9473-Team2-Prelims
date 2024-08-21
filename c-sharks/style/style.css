@@ -215,6 +215,11 @@ main {
   left: 10px;
 }
 
+.rising-tides {
+  border-top: 5px solid #aaaaaa;
+  margin-top: 50px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
