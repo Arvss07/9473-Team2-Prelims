@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: justify;
   flex-wrap: wrap;
 }
 
@@ -24,7 +25,7 @@
 
 .footer-nav {
   display: flex;
-  gap: 15px;
+  gap: 10px;
 }
 
 .footer-nav a {
@@ -36,4 +37,27 @@
 
 .footer-nav a:hover {
   color: #37B7C3;
+}
+
+.footer-logo {
+  width: 85px;
+  height: 85px;
+}
+
+.footer-column2{
+  align-items: center;
+  text-align: center;
+  display: block;
+  width: 50%;
+  height: 50%;
+}
+.footer-column2 p{
+  display: inline-flex;
+  text-align: justify;
+  padding-inline: 30px;
+}
+.footer-column3{
+  display: block;
+  width: 25%;
+  height: 25%;
 }
