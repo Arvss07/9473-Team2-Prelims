@@ -8,6 +8,7 @@
 }
 
 .infinite-slider {
+  position: relative;
   display: flex;
   overflow: hidden;
   white-space: nowrap;
@@ -16,9 +17,30 @@
   border-bottom: 5px solid #cccccc;
 }
 
+.infinite-slider::before,
+.infinite-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 2;
+}
+
+.infinite-slider::before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #eeeeee);
+}
+
+.infinite-slider::after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0),
+      #eeeeee);
+}
+
 .photo-slider {
   display: flex;
-  animation: slide 30s infinite linear;
+  animation: slide 50s infinite linear;
 }
 
 .photos {
