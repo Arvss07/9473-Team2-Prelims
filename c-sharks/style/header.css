@@ -37,7 +37,7 @@ a {
 a:after {
   content:"";
   position: absolute;
-  background-color: #37B7C3;
+  background-color: #79E7FF;
   height: 3px;
   width: 0;
   left: 0;
@@ -51,11 +51,11 @@ a:after {
 }
 
 a.hover{
-  color: #37B7C3;
+  color: #79E7FF;
 }
 
 a.active{
-  color: #37B7C3;
+  color: #79E7FF;
 }
 
 a.active:after,
