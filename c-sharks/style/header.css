@@ -16,13 +16,33 @@
 
 .navbar a {
   font-size: 18px;
-  color: #EEEEEE;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   margin-left: 35px;
-  padding: 10px 15px;
+  padding: 0 10px;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s, padding 0.3s;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  font-weight: bold;
+  color: #EEEEEE;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+a:after {
+  content:"";
+  position: absolute;
+  background-color: #37B7C3;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
 }
 
 .logo {
@@ -30,9 +50,15 @@
   height: 60px;
 }
 
-.navbar a.active,
-.navbar a:hover {
-  color: #FFFFFF;
-  background-color: #37B7C3;
-  padding: 12px 17px;
+a.hover{
+  color: #37B7C3;
+}
+
+a.active{
+  color: #37B7C3;
+}
+
+a.active:after,
+a:hover:after {
+  width: 100%;
 }
