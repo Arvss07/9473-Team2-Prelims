@@ -34,8 +34,8 @@ a {
   padding: 0 10px;
 }
 
-a:after {
-  content:"";
+.navbar a:after {
+  content: "";
   position: absolute;
   background-color: #79E7FF;
   height: 3px;
@@ -50,11 +50,11 @@ a:after {
   height: 60px;
 }
 
-a.hover{
+a.hover {
   color: #79E7FF;
 }
 
-a.active{
+a.active {
   color: #79E7FF;
 }
 
