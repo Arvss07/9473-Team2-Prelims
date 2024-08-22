@@ -120,6 +120,14 @@ main {
   color: #37B7C3;
 }
 
+.islands,
+.coastline,
+.culture,
+.coral-triangle {
+  font-weight: bold;
+  color: #37B7C3;
+}
+
 .content-container {
   display: flex;
   align-items: center;
@@ -129,12 +137,12 @@ main {
   margin: 15px auto;
   border-radius: 5px;
   max-width: 90%;
-  transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, background-color 0.3s ease;
 }
 
 .content-container:hover {
   background-color: #ffffff;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .content-holder {
@@ -181,6 +189,7 @@ main {
   height: 520px;
   object-fit: cover;
   border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .credits {
