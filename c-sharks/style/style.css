@@ -68,7 +68,8 @@ main {
 }
 
 .lifeblood-text,
-.seventy-percent-text {
+.seventy-percent-text,
+.our-aim {
   font-size: 32px;
   font-weight: bold;
   /* Emphasize with a different color */
@@ -179,7 +180,30 @@ main {
   left: 10px;
 }
 
-.rising-tides {
+.rising-tides, .why-website {
   border-top: 5px solid #aaaaaa;
   margin-top: 50px;
 }
+
+.list{
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  text-align: justify;
+  overflow-wrap: break-word;
+  margin: 0 auto;
+  color: #333333;
+  width: 50%;
+}
+
+.list div ul{
+  align-self: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 50px;
+ }
