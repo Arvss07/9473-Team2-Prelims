@@ -507,59 +507,9 @@ main {
 480px for mobile phone 
 */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 5%;
-    background: #071952;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .header img {
-    width: fit-content;
-  }
-
-  .navbar a {
-    font-size: 18px;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    padding: 0 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s, padding 0.3s;
-  }
-
-  .banner-text {
-    position: absolute;
-    top: 70%;
-    left: 10px;
-    color: #fff;
-    padding: 10px;
-  }
-
+@media  and (max-width: 768px) {
   .banner-text h4 {
-    font-size: 60px;
-    padding-bottom: 5px;
-} 
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-  .banner-text h4 {
-      font-size: 60px;
-      padding-bottom: 5px;
+      font-size: 
   } 
+  
 }
