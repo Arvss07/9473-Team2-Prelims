@@ -456,27 +456,34 @@ main {
 
 .initiatives-row {
   display: flex;
+  margin: 10px;
   max-width: 100%;
+  gap: 10px;
   justify-content: space-between;
 }
 
 .initiatives-content {
   display: flex;
+  background-color: #fff;
+  padding: 15px 1%;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s ease;
 }
 
-/* .initiatives-content-image {
-   photo credits 
-} */
+.initiatives-content:hover {
+  background-color: #fff;
+  transform: scale(1.02);
+}
+
 
 .initiatives-content-image img {
+  position: relative;
   height: 300px;
   width: auto;
 }
 
 .initiatives-content-info {
-  display: flex;
   padding-left: 20px;
-  flex-direction: column;
 }
 
 .initiatives-content-info h3 {
@@ -486,17 +493,19 @@ main {
 
 .initiatives-content-info p {
   text-align: justify;
+  margin: 15px auto;
+  margin-bottom: 40px;
   font-size: 16px;
   max-width: 330px;
 }
 
 .initiatives-content-info .btn {
   text-decoration: none;
+  max-width: 50%;
   padding: 0.5rem 1rem;
   background: #37B7C3;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s ease-in-out;
-  align-self: flex-end;
 }
