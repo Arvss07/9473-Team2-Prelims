@@ -401,3 +401,62 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.initiatives-title-section {
+  text-align: left;
+  padding: 30px 5%;
+}
+
+.initiatives-title {
+  font-size: 62px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.initiatives-row {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.initiatives-content {
+  display: flex;
+}
+
+/* .initiatives-content-image {
+   photo credits 
+} */
+
+.initiatives-content-image img {
+  height: 300px;
+  width: auto;
+}
+
+.initiatives-content-info {
+  display: flex;
+  padding-left: 20px;
+  flex-direction: column;
+}
+
+.initiatives-content-info h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.initiatives-content-info p {
+  text-align: justify;
+  font-size: 16px;
+  max-width: 330px;
+}
+
+.initiatives-content-info .btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #37B7C3;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  align-self: flex-end;
+}
