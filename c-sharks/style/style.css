@@ -183,3 +183,33 @@ main {
   border-top: 5px solid #aaaaaa;
   margin-top: 50px;
 }
+
+/* For NEWS Page */
+.news-banner-card {
+  position: relative;
+  left: -5.7%;
+}
+
+.news-banner-card img {
+  max-width: 111.2%;
+  height: 50%;
+}
+
+.news-banner-text {
+  position: absolute;
+  top: 28%;
+  left: 30px;
+  color: #fff;
+  padding: 10px;
+}
+
+
+.news-banner-text h2 {
+  font-size: 105px;
+  padding-bottom: 25px;
+}
+
+.news-banner-text h4 {
+  font-size: 60px;
+  padding-bottom: 10px;
+}
