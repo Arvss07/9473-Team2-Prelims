@@ -250,7 +250,7 @@ main {
   font-weight: bold;
   color: black;
   margin-bottom: 20px;
-}
+} 
 
 .title-section p {
   max-width: 75%;
@@ -262,24 +262,6 @@ main {
   margin: 0 auto;
   color: #333333;
 }
-
-.news-content-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  margin-top: 5px;
-  margin: 15px auto;
-  border-radius: 5px;
-  max-width: 90%;
-  transition: transform 0.3s, background-color 0.3s ease;
-}
-
-.news-content-container:hover {
-  background-color: #ffffff;
-  transform: scale(1.02);
-}
-
 
 .news-content-image {
   position: relative;
