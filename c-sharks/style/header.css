@@ -5,7 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 5%;
+  padding: 20px 3%;
   background: #071952;
   display: flex;
   justify-content: space-between;
@@ -46,8 +46,19 @@ a {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-pic {
   width: 60px;
   height: 60px;
+}
+
+.logo-text {
+  margin-left: 20px;
+  font-size: 30px;
+  color: #fff;
 }
 
 a.hover {
