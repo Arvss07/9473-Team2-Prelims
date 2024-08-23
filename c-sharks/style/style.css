@@ -378,7 +378,7 @@ main {
   content: "";
   background: linear-gradient(45deg,
   #37B7C3, #071952, #088395, #1E2A5E,
-  #0D7C66, #3A1078, #eeeeee, #179BAE);
+  #0D7C66, #3A1078, #37B7C3, #179BAE);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -422,7 +422,7 @@ main {
 .initiatives-banner-text {
   position: absolute;
   top: 28%;
-  left: 70px;
+  left: 50px;
   color: #fff;
   display: flex;
   align-items: center;
@@ -432,12 +432,12 @@ main {
 
 .left-text {
   flex: 1;
-  font-size: 210px;
+  font-size: 230px;
 }
 
 .right-text {
   flex: 2;
-  font-size: 70px;
+  font-size: 75px;
   display: flex;
   flex-direction: column;
 }
