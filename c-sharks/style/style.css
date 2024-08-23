@@ -378,7 +378,7 @@ main {
   content: "";
   background: linear-gradient(45deg,
   #37B7C3, #071952, #088395, #1E2A5E,
-  #0D7C66, #3A1078, #eeeeee, #179BAE);
+  #0D7C66, #3A1078, #37B7C3, #179BAE);
   position: absolute;
   top: -2px;
   left: -2px;
