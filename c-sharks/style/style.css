@@ -267,8 +267,8 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #e68888; */
   padding: 20px;
+  margin-top: 5px;
   margin: 15px auto;
   border-radius: 5px;
   max-width: 90%;
