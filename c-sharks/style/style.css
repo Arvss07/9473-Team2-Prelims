@@ -239,6 +239,39 @@ main {
   padding-bottom: 10px;
 }
 
+/* For INITIATIVES Page */
+.initiatives-banner-card {
+  position: relative;
+}
+
+.initiatives-banner-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.initiatives-banner-text {
+  position: absolute;
+  top: 28%;
+  left: 70px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.left-text {
+  flex: 1;
+  font-size: 210px;
+}
+
+.right-text {
+  flex: 2;
+  font-size: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
 .news-title-section {
   text-align: left;
   padding: 30px 5%;
