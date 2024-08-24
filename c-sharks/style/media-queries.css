@@ -1,0 +1,83 @@
+@media (max-width: 1440px) {
+  .banner-card {
+    position: relative;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 55% !important;
+    left: 10px;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .hero-title {
+    font-size: 52px !important;
+  }
+
+  .title-section p {
+    font-size: 20px !important;
+    line-height: 1.5;
+  }
+
+  .lifeblood-text,
+  .seventy-percent-text,
+  .our-aim {
+    font-size: 24px !important;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  .content-holder h2 {
+    font-size: 40px !important;
+  }
+
+  .content-holder p {
+    font-size: 32px !important;
+  }
+
+  .content-container .content-image {
+    order: 1;
+  }
+
+  .content-container .content-holder {
+    order: 2;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0 0 0 !important;
+  }
+
+  .content-holder p {
+    max-width: 100%;
+    text-align: center !important;
+  }
+
+  .left-aligned .content-holder {
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto;
+  }
+
+  .left-aligned .content-holder h2 {
+    font-weight: bolder;
+    color: #071952;
+    margin-bottom: 10px;
+    text-align: center !important;
+  }
+
+  .left-aligned .content-holder p {
+    max-width: 100%;
+    text-align: center !important;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1.25rem;
+  }
+}
