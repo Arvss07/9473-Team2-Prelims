@@ -57,6 +57,8 @@
   width: 100%;
   max-width: 700px;
   height: auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .news-content-image:before {
@@ -186,4 +188,5 @@
 .sdg {
   font-style: oblique;
   padding-top: 30px;
+  font-weight: 1000;
 }
