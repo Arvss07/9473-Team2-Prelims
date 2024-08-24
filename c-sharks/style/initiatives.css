@@ -1,0 +1,101 @@
+/* For INITIATIVES Page */
+.initiatives-banner-card {
+  position: relative;
+}
+
+.initiatives-banner-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.initiatives-banner-text {
+  position: absolute;
+  top: 28%;
+  left: 50px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.left-text {
+  flex: 1;
+  font-size: 230px;
+}
+
+.right-text {
+  flex: 2;
+  font-size: 75px;
+  display: flex;
+  flex-direction: column;
+}
+
+.initiatives-title-section {
+  text-align: left;
+  padding: 30px 0%;
+}
+
+.initiatives-title {
+  font-size: 62px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.initiatives-row {
+  display: flex;
+  margin: 10px;
+  max-width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.initiatives-content {
+  display: flex;
+  background-color: #fff;
+  padding: 15px 1%;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s ease;
+}
+
+.initiatives-content:hover {
+  background-color: #fff;
+  transform: scale(1.02);
+}
+
+
+.initiatives-content-image img {
+  position: relative;
+  height: 300px;
+  width: auto;
+}
+
+.initiatives-content-info {
+  padding-left: 20px;
+}
+
+.initiatives-content-info h3 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.initiatives-content-info p {
+  text-align: justify;
+  margin: 15px auto;
+  margin-bottom: 40px;
+  font-size: 16px;
+  max-width: 330px;
+}
+
+.initiatives-content-info .btn {
+  text-decoration: none;
+  max-width: 50%;
+  padding: 0.5rem 1rem;
+  background: #37B7C3;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
+}
