@@ -80,4 +80,16 @@
     margin: 0 auto;
     padding: 1.25rem;
   }
+
+  /* TODO NI JUDRI Add a media query for the about page*/
+  .about-container {
+    width: 100px;
+    height: 100vh;
+    background: #eeeeee;
+    display: flex;
+    flex-direction: column !important;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
 }
