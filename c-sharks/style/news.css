@@ -1,4 +1,9 @@
 /* For NEWS Page */
+.news-title-section .news-title {
+  margin: 0 auto;
+  padding: auto;
+}
+
 .news-banner-card {
   position: relative;
 
