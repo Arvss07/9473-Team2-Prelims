@@ -70,7 +70,7 @@
     position: absolute;
     bottom: 50px;
     left: 30px;
-    white-space: nowrap;
+    white-space: pre-line;
     opacity: 0;
 }
 
@@ -79,7 +79,7 @@
     position: absolute;
     bottom: 30px;
     left: 30px;
-    white-space: nowrap;
+    white-space: pre-line;
     opacity: 0;
 }
 .about-img-box:hover{
@@ -89,13 +89,34 @@
 }
 
 .about-img-box:hover h3{
-    word-wrap: break-word;
     font-size: 30px;
     opacity: 1;
     bottom: 50px;
+    transition-delay: 0.45s;
+    z-index: 2;
 }
 
 .about-img-box:hover p{
     opacity: 1;
     bottom: 30px;
+    transition-delay: 0.45s;
+    z-index: 2;
+}
+/* TODO: AYUSIN DAW NI ARVY !!!!*/
+.about-img-box::before, .about-img-box::after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: inherit;
+    height: inherit;
+    border-radius: 30px;
+    overflow: hidden;
+    background: linear-gradient(
+    to top, 
+    rgba(0, 0, 0, 0.3), 
+    rgba(139, 139, 139, 0.025),
+    rgba(255, 255, 255, 0.4)
+    );
+    color: #fff; /* Ensure text color is white for readability */
+    padding: 10px; /* Add some padding for better appearance */
 }
