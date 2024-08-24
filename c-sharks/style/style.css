@@ -14,3 +14,35 @@
   box-sizing: border-box;
   font-family: "Helvetica", sans-serif;
 }
+
+/* Intro Animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  animation: fadeIn .4s ease-in-out;
+}
+
+.header,
+.banner-card,
+.infinite-slider {
+  animation: fadeIn .3s ease-in-out;
+  animation-fill-mode: both;
+}
+
+.banner-card {
+  animation-delay: .2s;
+}
+
+.infinite-slider {
+  animation-delay: 1.5s;
+}
