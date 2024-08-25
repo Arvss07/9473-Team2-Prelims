@@ -54,6 +54,7 @@
 .initiatives-content {
   display: flex;
   background-color: #fff;
+  width: 50%;
   padding: 15px 1%;
   border-radius: 5px;
   transition: transform 0.3s, background-color 0.3s ease;
@@ -72,7 +73,8 @@
 }
 
 .initiatives-content-info {
-  padding-left: 20px;
+  padding-left: 30px;
+  width: 100%;
 }
 
 .initiatives-content-info h3 {
@@ -85,7 +87,7 @@
   margin: 15px auto;
   margin-bottom: 40px;
   font-size: 16px;
-  max-width: 330px;
+  max-width: 100%;
 }
 
 .initiatives-content-info .btn {
@@ -132,12 +134,4 @@
 
 .todo-info {
   padding-left: 20px;
-}
-
-.initiatives-content-info p {
-  text-align: justify;
-  margin: 15px auto;
-  margin-bottom: 40px;
-  font-size: 16px;
-  max-width: 330px;
 }
