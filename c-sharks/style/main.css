@@ -58,15 +58,12 @@ main {
 .our-aim {
   font-size: 32px;
   font-weight: bold;
-  color: #37B7C3;
+  color: #29b8c5;
 }
 
-.islands,
-.coastline,
-.culture,
-.coral-triangle {
+.text-span {
   font-weight: bold;
-  color: #37B7C3;
+  color: #29b8c5;
 }
 
 .content-container {
