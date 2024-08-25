@@ -1,8 +1,3 @@
-.about {
-    margin-top: 100px;
-    padding: 10px;
-}
-
 .about-container {
     width: 100%;
     height: 85vh;
@@ -133,4 +128,66 @@
             rgba(255, 255, 255, 0.4));
     color: #fff;
     padding: 10px;
+}
+
+/*For the Our Aim*/
+.about-aim{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.about-aim-column {
+    display: block;
+    margin: 10px;
+    margin: 10px 0;
+    max-width: 100%;
+}
+  
+.about-aim-content {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.about-aim-info {
+    text-align: center;
+}
+/*End*/
+
+.about-title-section {
+    margin-top: 100px;
+    padding: 10px;   
+    text-align: center;
+}
+
+.about-content-section{
+    text-align: center;
+}
+
+.about-title-section p {
+    max-width: 75%;
+    font-size: 24px;
+    line-height: 2;
+    max-width: 70%;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin: 0 auto;
+    color: #333333;
+}
+
+.about-content-section p {
+    max-width: 75%;
+    font-size: 24px;
+    line-height: 2;
+    max-width: 70%;
+    text-align: center;
+    overflow-wrap: break-word;
+    margin: 0 auto;
+    color: #333333;
 }
