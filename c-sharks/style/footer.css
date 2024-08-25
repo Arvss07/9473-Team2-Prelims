@@ -26,6 +26,8 @@
 .footer-nav {
   display: flex;
   gap: 10px;
+  justify-content: center;
+  margin: 10px;
 }
 
 .footer-nav a {
@@ -44,6 +46,12 @@
   height: 85px;
 }
 
+.footer-column1 {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
 .footer-column2{
   align-items: center;
   text-align: center;
@@ -56,8 +64,25 @@
   text-align: justify;
   padding-inline: 30px;
 }
+
+.call-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .footer-column3{
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 25%;
   height: 25%;
+  gap: 15px;
+}
+
+.footer-column3 h3{
+  font-weight: bold;
+}
+
+.footer-column3 p{
+  line-height: 1.5;
 }
