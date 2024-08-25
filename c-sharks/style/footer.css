@@ -71,6 +71,9 @@
   align-items: center;
   justify-content: center;
 }
+.call-message img{
+  height: 30px;
+}
 
 .footer-column3{
   display: flex;
