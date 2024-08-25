@@ -108,6 +108,41 @@
   .about-img-box:hover {
     width: 300px !important;
   }
+}
 
+@media (max-width: 768px) {
+  .about-container {
+    width: 100%;
+    height: auto;
+    background: #000;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
 
+  .about-img-box {
+    width: 75px !important;
+    height: 550px !important;
+    margin: 0 5px !important;
+  }
+
+  .about-img-box h3 {
+    font-size: 18px !important;
+  }
+
+  .about-img-box p{
+    font-size: 12px !important;
+  }
+
+  .about-img-box:hover {
+    width: 150px !important;
+  }
+
+  .about-img-box:hover h3{
+    left: 15px !important;
+  }
 }
