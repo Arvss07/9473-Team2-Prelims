@@ -99,3 +99,45 @@
   transition: 0.4s ease-in-out;
   border-radius: 5px;
 }
+
+/* What To Do section */
+.todo-row {
+  display: flex;
+  margin: 10px;
+  max-width: 100%;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.todo-content {
+  display: flex;
+  width: 1000px;
+  align-items: center;
+  background-color: #EEEEEE;
+  padding: 15px 1%;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s ease;
+}
+
+.todo-content:hover {
+  background-color: #EEEEEE;
+  transform: scale(1.02);
+}
+
+.todo-image-icon img {
+  position: relative;
+  height: auto;
+  width: auto;
+}
+
+.todo-info {
+  padding-left: 20px;
+}
+
+.initiatives-content-info p {
+  text-align: justify;
+  margin: 15px auto;
+  margin-bottom: 40px;
+  font-size: 16px;
+  max-width: 330px;
+}
