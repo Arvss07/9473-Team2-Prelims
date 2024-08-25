@@ -83,14 +83,16 @@
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  /* Save Our Seas Text*/
   .header {
-    padding: 20px 12%;
+    padding: 20px 14%;
   }
 
   .banner-card {
     position: relative;
   }
 
+  /* Navigation Bar */
   .toggle-button {
     display: block;
     font-size: 30px;
@@ -143,15 +145,22 @@
     transition: left 0.3s ease;
   }
 
+  /* Content on Home */
+  /* SDG 14 */
   .banner-text h4 {
     top: 60% !important;
     padding-bottom: none !important;
   }
 
+  /* Life Below Water Text */
   .banner-text h2 {
     font-size: 30px !important;
-    padding-bottom: 5px !important;
+    padding-bottom: 15px !important;
   }
+
+  /*
+  .infinite-slider {
+  } */
 
   .hero-title {
     font-size: 28px !important;
@@ -170,6 +179,7 @@
 
   .content-container h2 {
     font-size: 30px !important;
+    text-align: center;
   }
 
   .content-container p {
@@ -178,8 +188,60 @@
   }
 
   .grid-container {
-    column-count: 2;
+    grid-template-columns: 1fr !important;
   }
+
+  .card .card-title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .card .card-body {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+  /* Footer */
+  .footer-logo {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 12px;
+    left: 12px;
+  }
+
+  /* .footer-column2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    top: 2;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  } */
+
+  .footer-nav {
+    gap: 5px;
+    margin: 5px;
+  }
+  
+  .footer-nav a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+
+  .footer p {
+    margin: 0;
+    font-size: 12px;
+  }
+
 
 
 } /* End of media queries for phones */
