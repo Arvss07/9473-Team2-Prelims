@@ -12,12 +12,13 @@
   align-items: center;
   width: 100%;
   max-width: 300px;
-  height: auto;
+  height: 350px;
   border-radius: 20px;
   background: #f5f5f5;
   padding: 1.8rem;
   border: 2px solid #c3c6ce;
   transition: border 0.3s, box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
 .card:hover {
