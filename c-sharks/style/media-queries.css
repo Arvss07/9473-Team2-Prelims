@@ -83,6 +83,7 @@
 
   /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  /* HOME PAGE */
   /* Save Our Seas Text*/
   .header {
     padding: 20px 14%;
@@ -92,7 +93,7 @@
     position: relative;
   }
 
-  /* Navigation Bar */
+  /* NAVIGATION BAR */
   .toggle-button {
     display: block;
     font-size: 30px;
@@ -143,9 +144,13 @@
   .sidebar-checkbox:checked ~ .toggle-button {
     left: 250px;
     transition: left 0.3s ease;
+    /* opacity: 1;
+    transform: rotate(90deg)
+    translate(-2px, -1px);
+    background-color: #071952; */
   }
 
-  /* Content on Home */
+  /* CONTENT ON HOME */
   /* SDG 14 Text */
   .banner-text h4 {
     top: 60% !important;
@@ -226,7 +231,7 @@
     width: 100%;
     justify-content: center;
   }
-
+    
   /* Contact Information*/
   .footer-column2 {
     order: 1;
