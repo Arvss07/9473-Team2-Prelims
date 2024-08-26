@@ -1,7 +1,7 @@
 /* For NEWS Page */
 .news-title-section .news-title {
   margin: 0 auto;
-  padding: auto;
+  padding: 0;
 }
 
 .news-banner-card {
@@ -186,7 +186,7 @@
 }
 
 .date {
-  font-weight: thin;
+  font-weight: 500;
   padding-bottom: 30px;
 }
 
