@@ -161,16 +161,44 @@
 
   }
 
+  .infinite-slider {
+    padding: 30px 0 !important;
+  }
+  .infinite-slider::before,
+  .infinite-slider::after {
+  width: 120px;
+  height: 90% !important;
+}
+
+  .photo-slider img {
+    width: 350px !important;
+    height: 200px !important;
+    margin: 0 10px !important;
+  }
+
+  .photo-slider .credits {
+    right: 20px;
+    background-color: rgba(151, 151, 151, 0.5);
+    transition: right 0.3s ease-in-out;
+  }
+  
+  .photo-slider .photos:hover .credits {
+    margin: 0 20px 0 0 !important;
+    font-size: 12px !important;
+  }
+
   /* Header */
   .header {
     padding: 10px 5%;
     text-align: center;
+    
   }
 
   /* Banner Card */
   .banner-card {
     position: relative;
     padding: 10px;
+    background-color: #eeeeee;
   }
 
   .banner-text {
@@ -180,8 +208,12 @@
     right: 10px;
     color: #fff;
     padding: 10px;
-    text-align: center;
-    transform: translateY(-50%);
+    
+  }
+
+  .banner-text h2, h4 {
+    font-size: 20px !important;
+    text-align: left;
   }
 
   .hero-title {
