@@ -259,7 +259,7 @@
   }
 
   .sidebar-checkbox:checked~.toggle-button {
-    left: calc(100% - 50px);
+    left: calc(100% - 40px);
   }
 
   /* Content */
