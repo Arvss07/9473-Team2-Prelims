@@ -131,20 +131,21 @@
 }
 
 /*For the Our Aim*/
-.about-aim{
+.about-aim {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
+
 .about-aim-column {
     display: block;
     margin: 10px;
     margin: 10px 0;
     max-width: 100%;
 }
-  
+
 .about-aim-content {
     font-size: 20px;
     display: block;
@@ -159,15 +160,16 @@
 .about-aim-info {
     text-align: center;
 }
+
 /*End*/
 
 .about-title-section {
     margin-top: 100px;
-    padding: 10px;   
+    padding: 10px;
     text-align: center;
 }
 
-.about-content-section{
+.about-content-section {
     text-align: center;
     margin: 10px;
     padding: 10px;
@@ -185,7 +187,6 @@
 }
 
 .about-content-section p {
-    max-width: 75%;
     font-size: 24px;
     line-height: 2;
     max-width: 70%;
@@ -193,4 +194,65 @@
     overflow-wrap: break-word;
     margin: 0 auto;
     color: #333333;
+}
+
+.meet-our-team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.meet-our-team-container .meet-our-team-description {
+    font-size: 24px;
+    line-height: 2;
+    margin: 10px 0 20px 0;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.team-container .team-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    height: 350px;
+    background: rgba(252, 252, 255, 0.856);
+    box-shadow: 0 8px 32px 0 rgba(10, 20, 161, 0.301);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 2px solid rgba(12, 13, 61, 0.18);
+    z-index: 0;
+}
+
+.team-container .team-card img {
+    position: absolute;
+    top: 30px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 1px dotted #071952;
+    object-fit: cover;
+}
+
+.team-container .team-card h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: #071952;
+    font-weight: 600;
+    margin-top: 200px;
 }
