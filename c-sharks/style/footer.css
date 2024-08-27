@@ -55,7 +55,10 @@
 .footer-column2{
   align-items: center;
   text-align: center;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 75px;
   width: 30%;
   height: 30%;
 }
@@ -80,7 +83,6 @@
   flex-direction: column;
   width: 25%;
   height: 25%;
-  gap: 15px;
 }
 
 .footer-column3 h3{
