@@ -1,6 +1,7 @@
 /* For INITIATIVES Page */
 .initiatives-banner-card {
   position: relative;
+  background-color: #eeeeee;
 }
 
 .initiatives-banner-card img {
