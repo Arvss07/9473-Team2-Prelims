@@ -16,6 +16,17 @@
   font-family: "Helvetica", sans-serif;
 }
 
+:root {
+  --text-size-content-parag: 24px;
+  --text-size-content-title: 40px;
+  --text-size-header-primary: 50px;
+  --text-size-header-secondary: 30px;
+  --text-size-page-titles: 100px;
+  --text-size-content-emphasis: 27px;
+  --text-size-anchor: 20px;
+  --text-size-photo-credits: 14px;
+}
+
 /* Intro Animation */
 @keyframes fadeIn {
   0% {
