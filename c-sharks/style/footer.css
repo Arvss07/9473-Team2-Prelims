@@ -78,6 +78,10 @@
   height: 30px;
 }
 
+.call-message p{
+  width: 200px;
+}
+
 .footer-column3{
   display: flex;
   flex-direction: column;

@@ -70,13 +70,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: #e68888; */
   padding: 20px;
   margin: 15px auto;
   border-radius: 5px;
   max-width: 90%;
   transition: transform 0.3s, background-color 0.3s ease;
-  cursor: pointer;
 }
 
 .content-container:hover {
