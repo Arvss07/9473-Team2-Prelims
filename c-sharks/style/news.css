@@ -24,12 +24,12 @@
 }
 
 .news-banner-text h2 {
-  font-size: 105px;
+  font-size: var(--text-size-page-titles);
   padding-bottom: 25px;
 }
 
 .news-banner-text h4 {
-  font-size: 60px;
+  font-size: var(--text-size-header-primary);
   padding-bottom: 10px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .news-title {
-  font-size: 62px;
+  font-size: var(--text-size-header-primary);
   font-weight: bold;
   color: black;
   margin-bottom: 20px;
@@ -48,7 +48,7 @@
 
 .title-section p {
   max-width: 75%;
-  font-size: 24px;
+  font-size: var(--text-size-content-parag);
   line-height: 2;
   max-width: 70%;
   text-align: center;
@@ -115,12 +115,12 @@
 
 .news-content-image .info h1 {
   margin: 0;
-  font-size: 80px;
+  font-size: var(--text-size-header-primary);
   padding-bottom: 30px;
 }
 
 .news-content-image .info p {
-  font-size: 25px;
+  font-size: var(--text-size-content-parag);
   letter-spacing: 1px;
   margin-top: 8px;
   margin-bottom: 20px;
