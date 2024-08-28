@@ -35,13 +35,13 @@
 .initiatives-title-section {
   text-align: left;
   padding: 30px 0%;
+  margin-bottom: 20px;
 }
 
 .initiatives-title {
-  font-size: 62px;
+  font-size: 60px;
   font-weight: bold;
   color: black;
-  margin-bottom: 20px;
 }
 
 .initiatives-row {
@@ -86,7 +86,7 @@
 
 .initiatives-content-info p {
   text-align: justify;
-  justify-self:center ;
+  justify-self: center;
   margin: 15px auto;
   margin-bottom: 15px;
   font-size: 16px;
@@ -131,10 +131,11 @@
 
 .todo-image-icon img {
   position: relative;
-  height: auto;
+  height: 50px;
   width: auto;
 }
 
 .todo-info {
   padding-left: 20px;
+  font-size: 20px;
 }
