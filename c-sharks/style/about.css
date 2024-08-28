@@ -67,10 +67,9 @@
     background-position: center;
 }
 
-.about-img-box h3 {
+.about-gallery .about-img-box h3 {
     color: #fff;
     max-width: 75%;
-    font-size: 30px;
     position: absolute;
     bottom: 70px;
     margin-bottom: 30px;
@@ -83,7 +82,6 @@
     color: #fff;
     position: absolute;
     font-style: oblique;
-    font-size: 12px;
     bottom: 10px;
     right: 30px;
     white-space: pre-line;
@@ -98,7 +96,7 @@
 }
 
 .about-img-box:hover h3 {
-    font-size: 30px;
+    font-size: var(--text-size-header-secondary);
     opacity: 1;
     bottom: 50px;
     transition-delay: 0.45s;
@@ -106,6 +104,7 @@
 }
 
 .about-img-box:hover p {
+    font-size: var(--text-size-photo-credits);
     opacity: 1;
     bottom: 30px;
     transition-delay: 0.45s;
@@ -153,7 +152,7 @@
 }
 
 .about-content-section p {
-    font-size: 24px;
+    font-size: var(--text-size-content-parag);
     line-height: 2;
     max-width: 100%;
     text-align: center;
@@ -170,7 +169,7 @@
 }
 
 .meet-our-team-container .meet-our-team-description {
-    font-size: 24px;
+    font-size: var(--text-size-content-parag);
     line-height: 2;
     margin: 10px 0 20px 0;
     text-align: center;
@@ -216,7 +215,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: calc(var(--text-size-content-parag) - 4px);
     color: #071952;
     font-weight: 600;
     margin-top: 200px;
