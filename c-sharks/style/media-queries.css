@@ -147,6 +147,7 @@
 }
 
 @media (max-width: 480px) {
+
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
@@ -339,6 +340,229 @@
   .photo-slider .photos:hover .credits {
     margin: 0 20px 0 0 !important;
     font-size: 12px !important;
+  }
+
+  /* END OF MEDIA QUERIES FOR HOME PAGE */
+
+  /* NEWS PAGE */
+  .news-banner-card img {
+    padding-top: 12% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .news-banner-text {
+    top: 22% !important;
+    text-align: center !important;
+  }
+
+  .news-banner-text h2 {
+    font-size: 28px;
+    padding-bottom: 1px !important;
+  }
+
+  .news-banner-text h4 {
+    font-size: 20px;
+    text-align: center !important;
+  }
+
+  .news-title-section {
+    font-size: 28px !important;
+    text-align: center;
+  }
+
+  .news-content-image {
+    width: 100%;
+    max-width: 400px !important;
+    height: 400px !important;
+  }
+
+  .news-content-image .info {
+    top: 20px !important;
+    color: white;
+
+  }
+
+  .news-content-image .info h1 {
+    font-size: 20px !important;
+    text-align: left !important;
+    padding-bottom: 5px !important;
+  }
+
+  .news-content-image .info p {
+    text-align: justify !important;
+    padding-bottom: calc(height - 2px) !important;
+  }
+
+  .news-content-image .info .btn {
+    left: 37px !important;
+
+  }
+
+  /* END OF MEDIA QUERIES FOR NEWS PAGE */
+
+  /* INITIATIVES PAGE */
+  .initiatives-banner-card img {
+    padding-top: 12% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .initiatives-banner-text {
+    top: 20% !important;
+    left: 9px !important;
+    text-align: center !important;
+  }
+
+  .left-text {
+    font-size: 120px !important;
+  }
+
+  .right-text {
+    font-size: 20px !important;
+  }
+
+  .initiatives-title {
+    font-size: 28px !important;
+    color: #071952 !important;
+  }
+
+  .initiatives-title-section {
+    margin-bottom: 5px !important;
+  }
+
+  .initiatives-row {
+    flex-direction: column !important;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .initiatives-content {
+    width: 100% !important;
+    max-width: 440px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .initiatives-content-image img {
+    height: 300px !important;
+    width: 300px !important;
+  }
+
+  .initiatives-content-info {
+    width: 100%;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .initiatives-content-info h3 {
+    font-size: 20px !important;
+    text-align: center !important;
+  }
+
+  .btn {
+    padding: 15px 40px;
+    left: 125px;
+    border: none;
+    outline: none;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 0;
+    border-radius: 12px;
+  }
+
+  .btn::before {
+    content: "";
+    background: linear-gradient(45deg,
+        #37B7C3, #071952, #088395, #1E2A5E,
+        #0D7C66, #3A1078, #37B7C3, #179BAE);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+  }
+
+  .btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #37B7C3;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 400% 0;
+    }
+
+    100% {
+      background-position: 0 0;
+    }
+  }
+
+  .todo-row {
+    flex-direction: column !important;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .todo-info {
+    font-size: 16px !important;
+  }
+
+  /* END OF MEDIA QUERIES FOR INITIATIVES */
+
+  /* ABOUT PAGE */
+  .hero-title {
+    font-size: 28px !important;
+    text-align: center;
+  }
+
+  .about-title-section {
+    width: 100%;
+  }
+
+  .about-title-section p {
+    font-size: 16px !important;
+    text-align: justify;
+  }
+
+  .about-container {
+    flex-direction: column !important;
+    gap: 10px;
+    justify-content: flex-start;
+  }
+
+  .about-content-section p,
+  .meet-our-team-description {
+    font-size: 16px !important;
+  }
+
+  .team-card {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: 350px;
+    border-radius: 20px;
   }
 
   /* Footer */
