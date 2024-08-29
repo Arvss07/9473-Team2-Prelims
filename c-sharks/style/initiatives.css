@@ -76,7 +76,6 @@
 .initiatives-content-info {
   padding-left: 30px;
   padding-right: 10px;
-  width: 100%;
 }
 
 .initiatives-content-info h3 {
@@ -124,18 +123,12 @@
   transition: transform 0.3s, background-color 0.3s ease;
 }
 
-.todo-content:hover {
-  background-color: #EEEEEE;
-  transform: scale(1.02);
-}
-
 .todo-image-icon img {
-  position: relative;
-  height: 60px;
+  height: 90px;
   width: auto;
 }
 
 .todo-info {
   padding-left: 20px;
-  font-size: var(--text-size-content-parag);
+  font-size: 20px;
 }

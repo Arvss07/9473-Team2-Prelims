@@ -22,7 +22,7 @@ main {
 }
 
 .banner-text h4 {
-  font-size: var(--text-size-header-secondary);
+  font-size: 50px;
   padding-bottom: 10px;
 }
 
