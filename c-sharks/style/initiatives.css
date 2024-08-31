@@ -11,6 +11,7 @@
 
 .initiatives-banner-text {
   position: absolute;
+  text-align: center;
   top: 28%;
   left: 50px;
   color: #fff;
@@ -27,7 +28,9 @@
 
 .right-text {
   flex: 2;
-  font-size: calc(var(--text-size-page-titles) - 30px);
+  text-align: left;
+  margin-left: 50px;
+  font-size: calc(var(--text-size-page-titles) - 20px);
   display: flex;
   flex-direction: column;
 }
@@ -134,4 +137,126 @@
 .todo-info {
   padding-left: 20px;
   font-size: 20px;
+}
+
+/* Donation Section */
+
+.donation-title-section {
+  text-align: center;
+  padding: 30px 0%;
+  margin-bottom: 20px;
+}
+  
+.donation-title {
+  font-size: var(--text-size-header-primary);
+  font-weight: bold;
+  color: black;
+}
+
+.main-donation-container {
+  position: relative;
+  margin: 0 100px;
+  padding: 80px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 5px solid #37B7C3;
+  height: 600px;
+}
+
+.main-donation-container img {
+  position: absolute;
+  top: 30px;
+  left: 550px;
+  max-width: 1000px;
+  height: auto;
+}
+
+.main-donation-content {
+  width: 65%;
+}
+
+.main-donation-content h2 {
+  font-size: calc(var(--text-size-header-primary) - 8px);
+  margin-bottom: 20px;
+}
+
+.main-donation-content p {
+  margin-left: 20px;
+  font-size: var(--text-size-anchor);
+  text-align: justify;
+  line-height: 1.25;
+}
+
+.main-donation-progress {
+  margin: 40px 0 60px;
+}
+
+.main-donation-progress h6{
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  position: relative;
+  width: 800px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: #eeeeee;
+}
+
+.progress-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 42%;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.7;
+  text-align: center;
+  height: 100%;
+  color: #fff;
+  background: #37B7C3;
+  border-radius: 30px;
+}
+
+.main-donation-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.donate-button {
+  text-decoration: none;
+  padding: 1.5rem 1.5rem;
+  background: #37B7C3;
+  letter-spacing: 1.5px;
+  color: #EEEEEE;
+  font-size: var(--text-size-anchor);
+  font-weight: 1000;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
+}
+
+.learnmore-button {
+  text-decoration: underline;
+  padding: 1.5rem 1.5rem;
+  letter-spacing: 1.5px;
+  color: #37B7C3;
+  font-size: var(--text-size-anchor);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+  border-radius: 5px;
+}
+
+.other-donations-title-section {
+  text-align: left;
+  padding: 30px 0%;
+  margin-bottom: 20px;
+}
+
+.other-donations-title {
+font-size: var(--text-size-header-primary);
+  font-weight: bold;
+  color: black;
 }
