@@ -719,7 +719,7 @@
     position: fixed;
     top: 4px;
     left: 10px;
-    z-index: 2;
+    z-index: 3;
   }
 
   .navbar {
@@ -730,7 +730,7 @@
     left: -100%;
     background-color: #071952 transparent;
     padding-top: 60px;
-    z-index: 1;
+    z-index: 2;
     transition: left 0.3s ease-in-out;
     opacity: 0;
   }
@@ -770,6 +770,7 @@
     display: flex;
     flex-direction: column;
     background-color: #eeeeee;
+    z-index: 1;
   }
 
   /* Content */
@@ -874,9 +875,10 @@
     width: 100vw;
     height: 100vh;
     background-color: #fcfcfc;
-    opacity: 0.9;
+    opacity: 0.5;
     background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #fcfcfc 34px),
-      repeating-linear-gradient(#e7e8ff55, #e7e8ff);
+    repeating-linear-gradient(#e7e8ff55, #e7e8ff);
+    /* z-index: -1; */
   }
 
   /* END OF MEDIA QUERIES FOR HOME PAGE */
