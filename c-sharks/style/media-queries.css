@@ -112,38 +112,36 @@
 /* Media Query for 1024 */
 @media screen and (max-width: 1024px) {
   .about-container {
-      width: 100%;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      overflow-y: hidden;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
   }
 
   .about-gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      height: 100%;
-      margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
   }
 
   .about-img-box {
-      width: 150px !important;
-      height: 350px !important;
-      margin: 0 10px !important;
+    width: 150px !important;
+    height: 350px !important;
+    margin: 0 10px !important;
   }
 
   .about-img-box:hover {
-      width: 250px !important;
+    width: 250px !important;
   }
 
 }
 
-
-
 @media (max-width: 768px) {
 
-    /* HOME PAGE */
+  /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
     order: 1;
@@ -254,11 +252,13 @@
     width: 45%;
     align-items: center;
   }
-  .footer-column2{
+
+  .footer-column2 {
     width: 40% !important;
     text-align: center;
 
   }
+
   .footer-column3 {
     width: 100%;
     text-align: center;
@@ -403,52 +403,53 @@
     width: 100% !important;
     height: auto !important;
   }
-  
+
   .news-banner-text {
     top: 30% !important;
     text-align: center !important;
   }
-  
+
   .news-banner-text h2 {
     font-size: var(--text-size-header-primary) !important;
     padding-bottom: 1px !important;
   }
-  
+
   .news-banner-text h4 {
     font-size: var(--text-size-header-secondary) !important;
     text-align: center !important;
   }
-  
+
   .news-title-section {
     font-size: 28px !important;
     text-align: center;
   }
-  
+
   .news-content-image {
     width: 100%;
     max-width: 400px !important;
     height: 400px !important;
   }
-  
+
   .news-content-image .info {
     top: 20px !important;
     color: white;
   }
-  
+
   .news-content-image .info h1 {
     font-size: 20px !important;
     text-align: left !important;
     padding-bottom: 5px !important;
   }
-  
+
   .news-content-image .info p {
     text-align: justify !important;
     padding-bottom: calc(height - 2px) !important;
   }
-  
+
   .news-content-image .info .btn {
     left: 37px !important;
   }
+
   /* END OF MEDIA QUERIES FOR NEWS */
 
   /* Initiatives */
@@ -624,8 +625,8 @@
   .about-img-box::before,
   .about-img-box::after {
     background: linear-gradient(to top,
-            rgba(0, 0, 0, 0.4),
-            rgba(211, 202, 202, 0.025)) !important;
+        rgba(0, 0, 0, 0.4),
+        rgba(211, 202, 202, 0.025)) !important;
   }
 
   .hero-title {
@@ -648,7 +649,7 @@
     font-size: 20px !important;
   }
 
-  .about-content-section{
+  .about-content-section {
     margin-top: 50px !important;
   }
 
@@ -659,7 +660,9 @@
     border-radius: 20px;
   }
 
-} /* End of 768px Media Query */
+}
+
+/* End of 768px Media Query */
 
 @media (max-width: 480px) {
 
@@ -748,7 +751,7 @@
     opacity: 1;
   }
 
-  .sidebar-checkbox:checked~.navbar a{
+  .sidebar-checkbox:checked~.navbar a {
     pointer-events: auto;
   }
 
@@ -864,6 +867,16 @@
   .photo-slider .photos:hover .credits {
     margin: 0 20px 0 0 !important;
     font-size: 12px !important;
+  }
+
+  .pattern {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fcfcfc;
+    opacity: 0.9;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #fcfcfc 34px),
+      repeating-linear-gradient(#e7e8ff55, #e7e8ff);
   }
 
   /* END OF MEDIA QUERIES FOR HOME PAGE */
@@ -1099,8 +1112,8 @@
   .about-img-box::before,
   .about-img-box::after {
     background: linear-gradient(to top,
-            rgba(0, 0, 0, 0.4),
-            rgba(211, 202, 202, 0.025)) !important;
+        rgba(0, 0, 0, 0.4),
+        rgba(211, 202, 202, 0.025)) !important;
   }
 
   .hero-title {
@@ -1108,7 +1121,7 @@
     text-align: center;
   }
 
-  .meet-our-team-container{
+  .meet-our-team-container {
     margin-top: 50px !important;
   }
 
@@ -1132,10 +1145,12 @@
     height: 300px !important;
     border-radius: 20px;
   }
-  .team-member-name{
+
+  .team-member-name {
     font-size: var(--text-size-content-parag-var2) !important;
   }
-  .team-container .team-card img{
+
+  .team-container .team-card img {
     top: 45px !important;
     height: 150px !important;
     width: 150px !important;
@@ -1153,14 +1168,14 @@
     gap: 0px !important;
   }
 
-  .footer-column2{
+  .footer-column2 {
     width: 85% !important;
     text-align: center;
     flex-direction: row;
     margin-left: -80px !important;
   }
 
-  .call-message{
+  .call-message {
     width: 175px !important;
   }
 
@@ -1208,8 +1223,8 @@
   }
 }
 
-@media (max-width: 425px){
-  .footer-column2{
+@media (max-width: 425px) {
+  .footer-column2 {
     width: 85% !important;
     text-align: center;
     flex-direction: row;
