@@ -681,6 +681,7 @@
 
   .header h1 {
     font-size: 25px;
+    font-family: "Montserrat-Black";
 
   }
 
@@ -700,7 +701,7 @@
   /* SDG 14 Text */
   .banner-text h4 {
     font-size: 50px !important;
-    font-family: "LibreItalic";
+    font-family: "Montserrat-Black";
     text-align: left;
     padding-bottom: 0% !important;
   }
@@ -708,7 +709,7 @@
   /* Life Below Water Text */
   .banner-text h2 {
     font-size: 30px !important;
-    font-family: "Merriweather";
+    font-family: "Montserrat-Black";
     padding: 0% !important;
   }
 
@@ -791,7 +792,7 @@
   Beneath the Breeze Text */
   .title-section h1 {
     color: #071952;
-    font-family: "Merriweather";
+    font-family: "Montserrat-Black";
     /* TEST */
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -845,7 +846,7 @@
   .content-container h2 {
     font-size: 24px !important;
     text-align: center;
-    font-family: "Merriweather";
+    font-family: "Montserrat-Black";
   }
 
   .content-container p {
@@ -947,17 +948,23 @@
 
   .news-banner-text h2 {
     font-size: 28px;
+    font-family: "Montserrat-Black";
     padding-bottom: 1px !important;
   }
 
   .news-banner-text h4 {
     font-size: 20px;
+    font-family: "Montserrat-Black";
     text-align: center !important;
   }
 
   .news-title-section {
     font-size: 28px !important;
     text-align: center;
+  }
+
+  .news-title-section h1{
+    font-family: "Montserrat-Black";
   }
 
   .news-content-image {
@@ -1029,6 +1036,7 @@
   .initiatives-title {
     font-size: 28px !important;
     color: #071952 !important;
+    font-family: "Montserrat-Black";
   }
 
   .initiatives-title-section {
@@ -1224,6 +1232,7 @@
 
   .hero-title {
     font-size: 28px !important;
+    font-family: "Montserrat-Black";
     text-align: center;
   }
 
