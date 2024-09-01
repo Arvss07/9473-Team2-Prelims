@@ -681,8 +681,7 @@
 
   .header h1 {
     font-size: 25px;
-    font-family: "Montserrat-Black";
-
+    font-family: "LibreBaskervilleBold";
   }
 
   /* Banner Card */
@@ -693,7 +692,7 @@
   }
 
   .banner-text {
-    top: 64% !important;
+    top: 66% !important;
     left: 10px;
     padding: 0% !important;
   }
@@ -701,7 +700,7 @@
   /* SDG 14 Text */
   .banner-text h4 {
     font-size: 50px !important;
-    font-family: "Montserrat-Black";
+    font-family: "LibreBaskervilleBold";
     text-align: left;
     padding-bottom: 0% !important;
   }
@@ -709,7 +708,7 @@
   /* Life Below Water Text */
   .banner-text h2 {
     font-size: 30px !important;
-    font-family: "Montserrat-Black";
+    font-family: "LibreBaskervilleBold";
     padding: 0% !important;
   }
 
@@ -744,7 +743,7 @@
     margin: 10px 0 10px 20px;
     color: #eeeeee;
     font-size: 18px;
-    font-family: "Lora";
+    font-family: "Montserrat-Black";
     padding: 10px;
     text-align: left;
     pointer-events: none;
@@ -792,8 +791,7 @@
   Beneath the Breeze Text */
   .title-section h1 {
     color: #071952;
-    font-family: "Montserrat-Black";
-    /* TEST */
+    font-family: "LibreBaskervilleBold";
     animation: glow 1s ease-in-out infinite alternate;
   }
 
@@ -807,28 +805,18 @@
     }
   }
 
-  .title-section p {
-    color: black;
-    font-family: "Lora";
-    /* TEST */
-  }
-
-  .hero-title {
-    font-size: 1px !important;
-    width: 100%;
-  }
-
   /* Description below */
   .title-section p {
     max-width: 100% !important;
     font-size: 16px !important;
     text-align: center !important;
+    font-family: "Montserrat-Regular";
   }
 
   .lifeblood-text,
   .seventy-percent-text {
     font-size: 18px !important;
-    font-family: "Lora";
+    font-family: "Montserrat-Regular";
   }
 
   .content-container {
@@ -844,16 +832,21 @@
   }
 
   .content-container h2 {
-    font-size: 24px !important;
+    font-size: 26px !important;
     text-align: center;
-    font-family: "Montserrat-Black";
+    font-family: "LibreBaskervilleBold";
   }
 
   .content-container p {
     font-size: 16px !important;
     max-width: 100% !important;
     text-align: center !important;
-    font-family: "Lora";
+    font-family: "Montserrat-Regular";
+    color: #333333;
+  }
+
+  .text-span {
+    font-family: "Montserrat-Regular";
   }
 
   .card {
@@ -866,8 +859,8 @@
   }
 
   .card .card-title {
-    font-size: 20px;
-    font-family: "Merriweather";
+    font-size: 24px;
+    font-family: "LibreBaskervilleBold";
     text-align: center;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -875,14 +868,14 @@
 
   .card .card-body {
     font-size: 16px;
-    font-family: "Lora";
+    font-family: "Montserrat-Regular";
     text-align: justify;
     margin-bottom: 1.5rem;
     flex-grow: 1;
   }
 
   .card-reference {
-    font-family: "Lora";
+    font-family: "Montserrat-Black";
   }
 
   /* Infinite Slider */
@@ -1306,11 +1299,13 @@
 
   .footer-column2 .call-message {
     width: 180px !important;
+    font-family: "Montserrat-Regular";
   }
 
   .footer-column2 .call-message p {
     white-space: nowrap;
     font-size: 12px !important;
+    font-family: "Montserrat-Regular";
   }
 
   .footer-column3 {
@@ -1321,12 +1316,14 @@
   }
 
   .footer-column3 h3 {
-    font-size: 14px;
+    font-size: 16px;
+    font-family: "LibrebaskervilleBold";
   }
 
   .footer-column3 p {
     margin-top: 10px !important;
     font-size: 2px;
+    font-family: "Montserrat-Regular";
   }
 
   .footer-logo {
@@ -1354,6 +1351,7 @@
   .footer p {
     margin: 0;
     font-size: 12px;
+    font-family: "Montserrat-Regular";
   }
 }
 
@@ -1368,5 +1366,6 @@
     display: flex !important;
     padding-inline: 5px !important;
     width: auto !important;
+    font-family: "Montserrat-Regular";
   }
 }

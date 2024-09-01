@@ -129,7 +129,7 @@
 
 /* Libre Baskerville */
 @font-face {
-  font-family: "LibreBaskerville";
+  font-family: "LibreBaskervilleBold";
   src: url(..\res\fonts\LibreBaskerville-Bold.ttf) format("truetype"); 
   font-weight: bold;
 }
@@ -141,7 +141,7 @@
 }
 
 @font-face {
-  font-family: "LibreBaskerville";
+  font-family: "LibreBaskervilleRegular";
   src: url(..\res\fonts\LibreBaskerville-Regular.ttf) format("truetype");
   font-weight: normal;
 }
@@ -152,13 +152,6 @@
   src: url(../res/fonts/Montserrat-Black.ttf) format("truetype");
   font-weight: 900;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Merriweather-BlackItalic";
-  src: url(../res/fonts/Montserrat-BlackItalic.ttf) format("truetype");
-  font-weight: 900;
-  font-style: italic;
 }
 
 @font-face {
