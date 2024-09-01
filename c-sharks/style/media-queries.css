@@ -664,6 +664,7 @@
 /* End of 768px Media Query */
 
 @media (max-width: 480px) {
+
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
@@ -680,7 +681,7 @@
 
   .header h1 {
     font-size: 25px;
-    
+
   }
 
   /* Banner Card */
@@ -790,7 +791,8 @@
   Beneath the Breeze Text */
   .title-section h1 {
     color: #071952;
-    font-family: "Merriweather"; /* TEST */
+    font-family: "Merriweather";
+    /* TEST */
     animation: glow 1s ease-in-out infinite alternate;
   }
 
@@ -806,7 +808,8 @@
 
   .title-section p {
     color: black;
-    font-family: "Lora"; /* TEST */
+    font-family: "Lora";
+    /* TEST */
   }
 
   .hero-title {
@@ -1275,11 +1278,21 @@
     order: 5;
   }
 
+  .footer-content {
+    display: flex;
+    justify-content: flex-start;
+  }
+
   .footer-column1 {
     width: 50px;
     align-items: center;
     gap: 0px !important;
-    margin-right: 70px !important;
+  }
+
+  .footer-column2 {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-left: 10px;
   }
 
   .footer-column2 .call-message {
@@ -1337,10 +1350,9 @@
 
 @media (max-width: 425px) {
   .footer-column2 {
-    width: 85% !important;
     text-align: center;
+    column-gap: 10px;
     flex-direction: row;
-    margin-left: -70px !important;
   }
 
   .footer-column2 p {
