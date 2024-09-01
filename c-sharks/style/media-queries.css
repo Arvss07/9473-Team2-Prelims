@@ -760,7 +760,9 @@
   }
 
   .main {
+    z-index: 10;
     order: 2;
+    background-color: transparent;
   }
 
   /* General Styles */
@@ -775,36 +777,32 @@
     width: 100%;
     height: 100%;
     background-color: #eeeeee;
-    opacity: 0.5;
-    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #eeeeee 40px ), 
-    repeating-linear-gradient( #cbceff, #bdc1ff );
+    opacity: 0.25;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
   }
 
   /* Content */
   /* Save Our Seas - Protect Life
   Beneath the Breeze Text */
-  .title-section {
+  /* .title-section {
     color: white;
     animation: glow 1s ease-in-out infinite alternate;
-  }
+  } */
 
   @keyframes glow {
     from {
       text-shadow: 0 0 10 px #071952, 0 0 20px #071952, 0 0 40px #088395, 0 0 50px #071952;
     }
+
     to {
       text-shadow: 0 0 60px #37B7C3, 0 0 70px #071952;
     }
   }
 
   .hero-title {
-    font-size: 28px !important;
+    font-size: 1px !important;
     width: 100%;
-    z-index: 10 !important; /* NOT WORKING */
-  }
-
-  .rising-tides {
-    z-index: 10 !important;
   }
 
   /* Description below */
@@ -812,7 +810,6 @@
     max-width: 100% !important;
     font-size: 16px !important;
     text-align: center !important;
-    z-index: 10 !important;
   }
 
   .lifeblood-text,
@@ -822,7 +819,6 @@
 
   .content-container {
     order: 3;
-    z-index: 10 !important;
   }
 
   /* Pictures in Containers*/
@@ -836,14 +832,12 @@
   .content-container h2 {
     font-size: 24px !important;
     text-align: center;
-    z-index: 10 !important;
   }
 
   .content-container p {
     font-size: 16px !important;
     max-width: 100% !important;
     text-align: center !important;
-    z-index: 10 !important;
   }
 
   .card {
@@ -1100,7 +1094,8 @@
     height: 100%;
     background-color: #eeeeee;
     opacity: 0.5;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 17px), repeating-linear-gradient(#d4d4d455, #d4d4d4);
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
   }
 
 
