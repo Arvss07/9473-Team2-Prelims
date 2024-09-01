@@ -669,6 +669,7 @@
   .header {
     order: 1;
     padding: 10px 13% !important;
+    font-family: "LibreBaskervilleItalic";
   }
 
   /* Logo */
@@ -679,7 +680,7 @@
 
   .header h1 {
     font-size: 25px;
-    font-family: "LibreItalic";
+    
   }
 
   /* Banner Card */
@@ -912,15 +913,33 @@
   /* END OF MEDIA QUERIES FOR HOME PAGE */
 
   /* NEWS PAGE */
+  .news-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-main-container::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    opacity: 0.5;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
+  }
+
   .news-banner-card img {
     padding-top: 12% !important;
     width: 100% !important;
     height: auto !important;
+    z-index: 10 !important;
   }
 
   .news-banner-text {
-    top: 22% !important;
+    top: 30% !important;
     text-align: center !important;
+    font-family: "LibreBaskerville";
   }
 
   .news-banner-text h2 {
@@ -963,12 +982,27 @@
 
   .news-content-image .info .btn {
     left: 37px !important;
-
   }
 
   /* END OF MEDIA QUERIES FOR NEWS PAGE */
 
   /* INITIATIVES PAGE */
+  .initiatives-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .initiatives-main-container::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    opacity: 0.5;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
+  }
+
   .initiatives-banner-card img {
     padding-top: 12% !important;
     width: 100% !important;
