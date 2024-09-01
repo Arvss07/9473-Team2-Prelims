@@ -1087,6 +1087,7 @@
     background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 17px), repeating-linear-gradient(#d4d4d455, #d4d4d4);
   }
 
+
   .about-title-section {
     order: 2 !important;
     z-index: 10;
