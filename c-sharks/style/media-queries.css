@@ -659,13 +659,11 @@
     height: 100px;
     border-radius: 20px;
   }
-
 }
 
 /* End of 768px Media Query */
 
 @media (max-width: 480px) {
-
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
@@ -681,6 +679,7 @@
 
   .header h1 {
     font-size: 25px;
+    font-family: "LibreItalic";
   }
 
   /* Banner Card */
@@ -691,7 +690,7 @@
   }
 
   .banner-text {
-    top: 67% !important;
+    top: 64% !important;
     left: 10px;
     padding: 0% !important;
   }
@@ -699,6 +698,7 @@
   /* SDG 14 Text */
   .banner-text h4 {
     font-size: 50px !important;
+    font-family: "LibreItalic";
     text-align: left;
     padding-bottom: 0% !important;
   }
@@ -706,6 +706,7 @@
   /* Life Below Water Text */
   .banner-text h2 {
     font-size: 30px !important;
+    font-family: "Merriweather";
     padding: 0% !important;
   }
 
@@ -740,6 +741,7 @@
     margin: 10px 0 10px 20px;
     color: #eeeeee;
     font-size: 18px;
+    font-family: "Lora";
     padding: 10px;
     text-align: left;
     pointer-events: none;
@@ -777,7 +779,7 @@
     width: 100%;
     height: 100%;
     background-color: #eeeeee;
-    opacity: 0.25;
+    opacity: 0.5;
     background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
       repeating-linear-gradient(#cbceff, #bdc1ff);
   }
@@ -785,19 +787,25 @@
   /* Content */
   /* Save Our Seas - Protect Life
   Beneath the Breeze Text */
-  /* .title-section {
-    color: white;
+  .title-section h1 {
+    color: #071952;
+    font-family: "Merriweather"; /* TEST */
     animation: glow 1s ease-in-out infinite alternate;
-  } */
+  }
 
   @keyframes glow {
     from {
-      text-shadow: 0 0 10 px #071952, 0 0 20px #071952, 0 0 40px #088395, 0 0 50px #071952;
+      text-shadow: 0 0 10 px #eeeeee, 0 0 20px #eeeeee, 0 0 40px #088395, 0 0 50px #071952;
     }
 
     to {
-      text-shadow: 0 0 60px #37B7C3, 0 0 70px #071952;
+      text-shadow: 0 0 60px #071952, 0 0 70px #eeeeee;
     }
+  }
+
+  .title-section p {
+    color: black;
+    font-family: "Lora"; /* TEST */
   }
 
   .hero-title {
@@ -815,6 +823,7 @@
   .lifeblood-text,
   .seventy-percent-text {
     font-size: 18px !important;
+    font-family: "Lora";
   }
 
   .content-container {
@@ -832,12 +841,14 @@
   .content-container h2 {
     font-size: 24px !important;
     text-align: center;
+    font-family: "Merriweather";
   }
 
   .content-container p {
     font-size: 16px !important;
     max-width: 100% !important;
     text-align: center !important;
+    font-family: "Lora";
   }
 
   .card {
@@ -846,10 +857,12 @@
     height: 350px;
     border-radius: 20px;
     z-index: 10;
+    background-color: white;
   }
 
   .card .card-title {
     font-size: 20px;
+    font-family: "Merriweather";
     text-align: center;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -857,9 +870,14 @@
 
   .card .card-body {
     font-size: 16px;
+    font-family: "Lora";
     text-align: justify;
     margin-bottom: 1.5rem;
     flex-grow: 1;
+  }
+
+  .card-reference {
+    font-family: "Lora";
   }
 
   /* Infinite Slider */
