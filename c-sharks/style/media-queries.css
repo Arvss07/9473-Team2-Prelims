@@ -665,7 +665,6 @@
 /* End of 768px Media Query */
 
 @media (max-width: 480px) {
-
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
@@ -1205,6 +1204,7 @@
 
   }
 
+  /* APPLIES TO ALL PAGES */
   /* Footer */
   .footer {
     order: 5;
