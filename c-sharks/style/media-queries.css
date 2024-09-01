@@ -235,13 +235,13 @@
   }
 
   /* General Styles */
-  body {
+  /* body {
     font-size: 16px;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     background-color: #eeeeee;
-  }
+  } */
 
   /* Footer */
   .footer {
@@ -665,6 +665,7 @@
 /* End of 768px Media Query */
 
 @media (max-width: 480px) {
+
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
@@ -689,24 +690,24 @@
     height: auto !important;
   }
 
-  /* SDG 14 Text */
   .banner-text {
-    position: absolute;
-    top: 50%;
+    top: 67% !important;
     left: 10px;
-    right: 10px;
-    color: #fff;
-    padding: 10px;
+    padding: 0% !important;
+  }
 
+  /* SDG 14 Text */
+  .banner-text h4 {
+    font-size: 50px !important;
+    text-align: left;
+    padding-bottom: 0% !important;
   }
 
   /* Life Below Water Text */
-  .banner-text h2,
-  h4 {
-    font-size: 24px !important;
-    text-align: left;
+  .banner-text h2 {
+    font-size: 30px !important;
+    padding: 0% !important;
   }
-
 
   /* Navigation Bar */
   .toggle-button {
@@ -763,21 +764,47 @@
   }
 
   /* General Styles */
-  body {
-    font-size: 16px;
-    line-height: 1.5;
+  .home-main-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .home-main-container::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background-color: #eeeeee;
-    z-index: 1;
+    opacity: 0.5;
+    background-image: repeating-radial-gradient( circle at 0 0, transparent 0, #eeeeee 40px ), 
+    repeating-linear-gradient( #cbceff, #bdc1ff );
   }
 
   /* Content */
   /* Save Our Seas - Protect Life
   Beneath the Breeze Text */
+  .title-section {
+    color: white;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10 px #071952, 0 0 20px #071952, 0 0 40px #088395, 0 0 50px #071952;
+    }
+    to {
+      text-shadow: 0 0 60px #37B7C3, 0 0 70px #071952;
+    }
+  }
+
   .hero-title {
     font-size: 28px !important;
     width: 100%;
+    z-index: 10 !important; /* NOT WORKING */
+  }
+
+  .rising-tides {
+    z-index: 10 !important;
   }
 
   /* Description below */
@@ -785,6 +812,7 @@
     max-width: 100% !important;
     font-size: 16px !important;
     text-align: center !important;
+    z-index: 10 !important;
   }
 
   .lifeblood-text,
@@ -794,29 +822,28 @@
 
   .content-container {
     order: 3;
+    z-index: 10 !important;
   }
 
   /* Pictures in Containers*/
   .content-container img {
     width: 100% !important;
     max-width: 400px !important;
+    height: 250px !important;
+    z-index: 10;
   }
 
   .content-container h2 {
     font-size: 24px !important;
     text-align: center;
+    z-index: 10 !important;
   }
 
   .content-container p {
     font-size: 16px !important;
     max-width: 100% !important;
     text-align: center !important;
-  }
-
-  .content-image img {
-    width: 100% !important;
-    max-width: 1000px !important;
-    height: 250px !important;
+    z-index: 10 !important;
   }
 
   .card {
@@ -824,6 +851,7 @@
     max-width: 400px !important;
     height: 350px;
     border-radius: 20px;
+    z-index: 10;
   }
 
   .card .card-title {
@@ -867,17 +895,6 @@
   .photo-slider .photos:hover .credits {
     margin: 0 20px 0 0 !important;
     font-size: 12px !important;
-  }
-
-  .pattern {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: #fcfcfc;
-    opacity: 0.5;
-    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #fcfcfc 34px),
-      repeating-linear-gradient(#e7e8ff55, #e7e8ff);
-    /* z-index: -1; */
   }
 
   /* END OF MEDIA QUERIES FOR HOME PAGE */
