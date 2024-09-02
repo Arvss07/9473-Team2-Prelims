@@ -665,6 +665,13 @@
 
 @media (max-width: 480px) {
 
+  /* */
+  .main {
+    z-index: 10 !important;
+    order: 2 !important;
+    background-color: transparent !important;
+  }
+
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
@@ -761,12 +768,6 @@
 
   .sidebar-checkbox:checked~.toggle-button {
     left: calc(100vw - 33px);
-  }
-
-  .main {
-    z-index: 10;
-    order: 2;
-    background-color: transparent;
   }
 
   /* General Styles */
@@ -926,6 +927,30 @@
       repeating-linear-gradient(#cbceff, #bdc1ff);
   }
 
+  /* Text On Image */
+  .news-banner-text {
+    top: 35% !important;
+    text-align: center !important;
+  }
+
+  /* SDG 14 text */
+  .news-banner-text h2 {
+    font-size: 30px;
+    font-family: "LibreBaskervilleBold";
+    padding-bottom: 1px !important;
+  }
+
+  /* Safeguarding Our Oceans Text */
+  .news-banner-text h4 {
+    font-size: 20px;
+    font-family: "LibreBaskervilleBold";
+    text-align: center !important;
+  }
+
+  .news-banner-card {
+    z-index: 10 !important;
+  }
+
   .news-banner-card img {
     padding-top: 12% !important;
     width: 100% !important;
@@ -933,49 +958,50 @@
     z-index: 10 !important;
   }
 
-  .news-banner-text {
-    top: 30% !important;
-    text-align: center !important;
-    font-family: "LibreBaskerville";
-  }
-
-  .news-banner-text h2 {
-    font-size: 28px;
-    font-family: "Montserrat-Black";
-    padding-bottom: 1px !important;
-  }
-
-  .news-banner-text h4 {
-    font-size: 20px;
-    font-family: "Montserrat-Black";
-    text-align: center !important;
+  /* News Text */
+  .news-title {
+    margin-bottom: 0px !important;
   }
 
   .news-title-section {
-    font-size: 28px !important;
-    text-align: center;
+    font-size: 26px !important;
+    z-index: 10 !important;
   }
 
-  .news-title-section h1{
-    font-family: "Montserrat-Black";
+  .news-title-section h1 {
+    color: #071952;
+    font-family: "LibreBaskervilleBold" !important;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10 px #eeeeee, 0 0 20px #eeeeee, 0 0 40px #088395, 0 0 50px #071952;
+    }
+
+    to {
+      text-shadow: 0 0 60px #071952, 0 0 70px #eeeeee;
+    }
   }
 
   .news-content-image {
     width: 100%;
     max-width: 400px !important;
-    height: 400px !important;
+    height: 200px !important;
   }
 
   .news-content-image .info {
-    top: 20px !important;
-    color: white;
-
+    /* top: 20px !important;
+    color: white !important;
+    z-index: 10 !important; */
+    display: none;
   }
 
   .news-content-image .info h1 {
-    font-size: 20px !important;
+    font-size: 22px !important;
     text-align: left !important;
     padding-bottom: 5px !important;
+    font-family: "LibreBaskervilleBold";
   }
 
   .news-content-image .info p {
@@ -985,6 +1011,16 @@
 
   .news-content-image .info .btn {
     left: 37px !important;
+  }
+
+  .date {
+    padding-bottom: 5px !important;
+    font-family: "Montserrat-Regular" !important;
+  }
+
+  .sdg {
+    padding-top: 0px !important;
+    font-family: "Montserrat-Regular" !important;
   }
 
   /* END OF MEDIA QUERIES FOR NEWS PAGE */
@@ -1013,23 +1049,37 @@
   }
 
   .initiatives-banner-text {
-    top: 20% !important;
-    left: 9px !important;
+    top: 25% !important;
+    left: 7px !important;
     text-align: center !important;
   }
 
+  /* 14 Text */
   .left-text {
-    font-size: 120px !important;
+    font-size: 110px !important;
+    font-family: "LibreBaskervilleBold" !important;
   }
 
+  /* Life Below Water */
   .right-text {
     font-size: 20px !important;
+    font-family: "LibreBaskervilleBold" !important;
   }
 
   .initiatives-title {
-    font-size: 28px !important;
-    color: #071952 !important;
-    font-family: "Montserrat-Black";
+    color: #071952;
+    font-family: "LibreBaskervilleBold" !important;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10 px #eeeeee, 0 0 20px #eeeeee, 0 0 40px #088395, 0 0 50px #071952;
+    }
+
+    to {
+      text-shadow: 0 0 60px #071952, 0 0 70px #eeeeee;
+    }
   }
 
   .initiatives-title-section {
@@ -1048,6 +1098,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 10;
   }
 
   .initiatives-content-image img {
@@ -1062,67 +1113,18 @@
   }
 
   .initiatives-content-info h3 {
-    font-size: 20px !important;
+    font-size: 24px !important;
+    text-align: center !important;
+    font-family: "LibreBaskervilleBold" !important;
+  }
+
+  .initiatives-content-info p {
+    font-family: "Montserrat-Regular";
     text-align: center !important;
   }
 
   .btn {
-    padding: 15px 40px;
-    left: 125px;
-    border: none;
-    outline: none;
-    color: white;
-    position: relative;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    z-index: 0;
-    border-radius: 12px;
-  }
-
-  .btn::before {
-    content: "";
-    background: linear-gradient(45deg,
-        #37B7C3, #071952, #088395, #1E2A5E,
-        #0D7C66, #3A1078, #37B7C3, #179BAE);
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 600%;
-    z-index: -1;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-    opacity: 1;
-  }
-
-  .btn::after {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #37B7C3;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-  }
-
-  @keyframes glowing {
-    0% {
-      background-position: 0 0;
-    }
-
-    50% {
-      background-position: 400% 0;
-    }
-
-    100% {
-      background-position: 0 0;
-    }
+    display: none;
   }
 
   .todo-row {
@@ -1154,7 +1156,6 @@
       repeating-linear-gradient(#cbceff, #bdc1ff);
   }
 
-
   .about-title-section {
     order: 2 !important;
     z-index: 10;
@@ -1170,6 +1171,16 @@
     z-index: 10;
   }
 
+  .about-container {
+    /* width: 100%;
+    height: 60vh;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: 10px 0 !important;
+  }
+
   .about-content-section {
     order: 4 !important;
     z-index: 10;
@@ -1177,27 +1188,24 @@
 
   .about-container {
     width: 100%;
-    height: 200vh;
-    display: flex;
-    flex-direction: column;
-    overflow-y: hidden;
-    margin: 25px 0 !important;
+    height: max-content !important;
     background-color: transparent !important;
   }
 
   .about-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 250vh;
-    margin: 0 auto;
+    height: max-content !important;
     background-color: transparent !important;
   }
 
   .about-img-box {
-    width: 150px !important;
-    height: 250px !important;
-    margin: 0 10px !important;
+    width: 300px !important;
+    height: 300px !important;
+    margin-bottom: 30px !important;
+  }
+
+  .about-img-box:hover {
+    width: 400px !important;
+    height: 400px !important;
   }
 
   .about-img-box h3 {
@@ -1208,12 +1216,9 @@
     font-size: 12px !important;
   }
 
-  .about-img-box:hover {
-    width: 150px !important;
-  }
-
   .about-img-box:hover h3 {
     left: 15px !important;
+    font-family: "LibreBaskervilleBold";
   }
 
   .about-img-box::before,
@@ -1224,8 +1229,8 @@
   }
 
   .hero-title {
-    font-size: 28px !important;
-    font-family: "Montserrat-Black";
+    font-size: 30px !important;
+    font-family: "LibreBaskervilleBold";
     text-align: center;
   }
 
@@ -1239,12 +1244,19 @@
 
   .about-title-section p {
     font-size: 16px !important;
-    text-align: justify;
+    text-align: center !important;
+    font-family: "Montserrat-Regular";
+    width: 100% !important;
+  }
+
+  .about-content-section {
+    margin-top: 1% !important;
   }
 
   .about-content-section p,
   .meet-our-team-description {
     font-size: 16px !important;
+    font-family: "Montserrat-Regular";
   }
 
   .team-card {
@@ -1258,6 +1270,7 @@
   .team-member-name {
     font-size: calc(var(--text-size-content-parag-var2) - 4px) !important;
     margin-bottom: 30px;
+    font-family: "Montserrat-Regular";
   }
 
   .team-container {
@@ -1271,7 +1284,6 @@
     top: 30px !important;
     height: 120px !important;
     width: 120px !important;
-
   }
 
   /* APPLIES TO ALL PAGES */
