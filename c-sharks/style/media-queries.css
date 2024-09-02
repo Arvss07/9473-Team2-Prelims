@@ -750,7 +750,7 @@
     margin: 10px 0 10px 20px;
     color: #eeeeee;
     font-size: 18px;
-    font-family: "Montserrat-Black";
+    font-family: "Montserrat-Regular";
     padding: 10px;
     text-align: left;
     pointer-events: none;
@@ -796,16 +796,6 @@
     animation: glow 1s ease-in-out infinite alternate;
   }
 
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10 px #eeeeee, 0 0 20px #eeeeee, 0 0 40px #088395, 0 0 50px #071952;
-    }
-
-    to {
-      text-shadow: 0 0 60px #071952, 0 0 70px #eeeeee;
-    }
-  }
-
   /* Description below */
   .title-section p {
     max-width: 100% !important;
@@ -824,7 +814,7 @@
     order: 3;
   }
 
-  /* Pictures in Containers*/
+  /* Pictures in Containers */
   .content-container img {
     width: 100% !important;
     max-width: 400px !important;
@@ -974,16 +964,6 @@
     animation: glow 1s ease-in-out infinite alternate;
   }
 
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10 px #eeeeee, 0 0 20px #eeeeee, 0 0 40px #088395, 0 0 50px #071952;
-    }
-
-    to {
-      text-shadow: 0 0 60px #071952, 0 0 70px #eeeeee;
-    }
-  }
-
   .news-content-image {
     width: 100%;
     max-width: 400px !important;
@@ -1070,16 +1050,6 @@
     color: #071952;
     font-family: "LibreBaskervilleBold" !important;
     animation: glow 1s ease-in-out infinite alternate;
-  }
-
-  @keyframes glow {
-    from {
-      text-shadow: 0 0 10 px #eeeeee, 0 0 20px #eeeeee, 0 0 40px #088395, 0 0 50px #071952;
-    }
-
-    to {
-      text-shadow: 0 0 60px #071952, 0 0 70px #eeeeee;
-    }
   }
 
   .initiatives-title-section {
@@ -1171,16 +1141,6 @@
     z-index: 10;
   }
 
-  .about-container {
-    /* width: 100%;
-    height: 60vh;
-    background: #eeeeee;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-    margin: 10px 0 !important;
-  }
-
   .about-content-section {
     order: 4 !important;
     z-index: 10;
@@ -1232,6 +1192,7 @@
     font-size: 30px !important;
     font-family: "LibreBaskervilleBold";
     text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   .meet-our-team-container {
@@ -1379,5 +1340,15 @@
     padding-inline: 5px !important;
     width: auto !important;
     font-family: "Montserrat-Regular";
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10 px #eeeeee, 0 0 20px #eeeeee, 0 0 40px #088395, 0 0 50px #071952;
+  }
+
+  to {
+    text-shadow: 0 0 60px #071952, 0 0 70px #eeeeee;
   }
 }
