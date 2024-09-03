@@ -139,7 +139,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   /* HOME PAGE */
   /* Save Our Seas Text */
@@ -589,14 +589,14 @@
   background-color: #fff;
   border-radius: 15px;
   border: 5px solid #37B7C3;
-  height: 600px;
+  height: 750px !important;
   }
 
   .main-donation-container img {
     position: absolute;
-    top: 350px !important;
+    top: 530px !important;
     left: 200px !important;
-    max-width: 450px !important;
+    max-width: 400px !important;
     height: auto;
     align-items: center !important;
   }
@@ -610,6 +610,10 @@
     text-align: center !important;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+
+  .main-donation-progress h6{
+    margin-left: 20px;
   }
   
   .main-donation-content p {
@@ -625,6 +629,14 @@
     height: 30px;
     border-radius: 30px;
     background-color: #eeeeee;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto;
+  }
+
+  .main-donation-progress{
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
   }
   
   .progress-bar span {
@@ -644,14 +656,13 @@
   
   .main-donation-buttons {
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     align-items: center !important;
-    align-content: center !important;
     justify-content: center !important;
-    justify-items: center !important;
     gap: 20px;
     width: 35%;
+    margin: 0 auto;
   }
   
   .donate-button {
@@ -678,7 +689,7 @@
     transition: 0.4s ease-in-out;
     border-radius: 5px;
   }
-  
+
   /*About Webpage */
   .about-container {
     width: 100%;
