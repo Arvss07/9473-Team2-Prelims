@@ -836,6 +836,11 @@
     color: #333333;
   }
 
+  .content-container .content-image p {
+    font-size: 12px !important;
+    color: rgb(255, 255, 255);
+  }
+
   .text-span {
     font-family: "Montserrat-Regular";
   }
@@ -1329,6 +1334,7 @@
 }
 
 @media (max-width: 425px) {
+
   .footer-column2 {
     text-align: center;
     column-gap: 10px;
