@@ -243,6 +243,7 @@
   }
 
   .main {
+    z-index: 10 !important;
     order: 2 !important;
     background-color: transparent !important;
   }
@@ -457,6 +458,11 @@
   /* END OF MEDIA QUERIES FOR HOME PAGE */
 
   /* NEWS PAGE */
+  .news-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .news-main-container::before {
     content: "";
     position: fixed;
@@ -468,10 +474,15 @@
       repeating-linear-gradient(#cbceff, #bdc1ff);
   }
 
+  .news-banner-card {
+    z-index: 10 !important;
+  }
+
   .news-banner-card img {
     padding-top: 7% !important;
     width: 100% !important;
     height: auto !important;
+    z-index: 10 !important;
   }
 
   .news-banner-text {
@@ -494,6 +505,7 @@
   .news-title-section {
     font-size: 28px !important;
     text-align: center;
+    z-index: 10 !important;
   }
 
   .news-title-section h1 {
@@ -564,15 +576,19 @@
 
   .left-text {
     font-size: 120px !important;
+    font-family: "LibreBaskervilleBold" !important;
   }
 
   .right-text {
     font-size: var(--text-size-content-title) !important;
+    font-family: "LibreBaskervilleBold" !important;
   }
 
   .initiatives-title {
     font-size: var(--text-size-content-title) !important;
     color: #071952 !important;
+    font-family: "LibreBaskervilleBold" !important;
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   .initiatives-title-section {
@@ -607,6 +623,12 @@
 
   .initiatives-content-info h3 {
     font-size: 20px !important;
+    text-align: center !important;
+    font-family: "LibreBaskervilleBold" !important;
+  }
+
+  .initiatives-content-info p {
+    font-family: "Montserrat-Regular";
     text-align: center !important;
   }
 
@@ -681,13 +703,13 @@
   }
   
   .main-donation-container{
-  position: relative;
-  margin: 0 65px !important;
-  padding: 20px !important;
-  background-color: #fff;
-  border-radius: 15px;
-  border: 5px solid #37B7C3;
-  height: 750px !important;
+    position: relative;
+    margin: 0 65px !important;
+    padding: 20px !important;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 5px solid #37B7C3;
+    height: 750px !important;
   }
 
   .main-donation-container img {
@@ -798,6 +820,7 @@
     margin: 30px 0 !important;
     order: 3 !important;
     background-color: transparent !important;
+    z-index: 10 !important;
   }
 
   .about-main-container::before {
@@ -868,12 +891,14 @@
     margin-top: 50px !important;
     width: 100%;
     order: 2 !important;
+    z-index: 10 !important;
   }
 
   .about-title-section p {
     font-size: 20px !important;
     text-align: justify;
     font-family: "Montserrat-Regular";
+    z-index: 10 !important;
   }
 
   .about-content-section p,
@@ -885,10 +910,12 @@
   .about-content-section {
     margin-top: 40px !important;
     order: 4 !important;
+    z-index: 10 !important;
   }
 
   .meet-our-team-container {
     order: 1 !important;
+    z-index: 10 !important;
   }
 
   .team-member-name {
