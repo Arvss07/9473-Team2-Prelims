@@ -144,8 +144,9 @@
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
-    order: 1;
+    order: 1 !important;
     padding: 10px 13% !important;
+    font-family: "LibreBaskervilleItalic";
   }
 
   /* Logo */
@@ -156,6 +157,7 @@
 
   .header h1 {
     font-size: 25px;
+    font-family: "LibreBaskervilleBold";
   }
 
   /* Banner Card */
@@ -178,12 +180,14 @@
   /* SDG 14 Text */
   .banner-text h4 {
     font-size: var(--text-size-content-title) !important;
+    font-family: "LibreBaskervilleBold";
     text-align: left;
   }
 
   /* Life Below Water Text */
   .banner-text h2 {
     font-size: calc(var(--text-size-header-primary) + 10px) !important;
+    font-family: "LibreBaskervilleBold";
     text-align: left;
   }
 
@@ -197,7 +201,7 @@
     position: fixed;
     top: 4px;
     left: 10px;
-    z-index: 2;
+    z-index: 3;
   }
 
   .navbar {
@@ -206,23 +210,31 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #071952;
+    background-color: #071952 transparent;
     padding-top: 60px;
-    z-index: 1;
-    transition: left 0.3s ease;
+    z-index: 2;
+    transition: left 0.3s ease-in-out;
   }
 
   .navbar a {
     display: block;
     margin: 10px 0;
     color: #eeeeee;
+    font-family: "Montserrat-Regular";
     font-size: 18px;
     padding: 10px;
     text-align: center;
+    pointer-events: none;
   }
 
   .sidebar-checkbox:checked~.navbar {
     left: 0;
+    background-color: #071952;
+    opacity: 1;
+  }
+
+  .sidebar-checkbox:checked~.navbar a {
+    pointer-events: auto;
   }
 
   .sidebar-checkbox:checked~.toggle-button {
@@ -231,21 +243,30 @@
   }
 
   .main {
-    order: 2;
+    order: 2 !important;
+    background-color: transparent !important;
   }
 
   /* General Styles */
-  /* body {
-    font-size: 16px;
-    line-height: 1.5;
+  .home-main-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .home-main-container::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background-color: #eeeeee;
-  } */
+    opacity: 0.5;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
+  }
 
   /* Footer */
   .footer {
-    order: 5;
+    order: 5 !important;
   }
 
   .footer-column1 {
@@ -256,7 +277,15 @@
   .footer-column2 {
     width: 40% !important;
     text-align: center;
+  }
 
+  .footer-column2 .call-message {
+    font-family: "Montserrat-Regular";
+  }
+
+  .footer-column2 .call-message p {
+    white-space: nowrap;
+    font-family: "Montserrat-Regular";
   }
 
   .footer-column3 {
@@ -267,10 +296,12 @@
 
   .footer-column3 h3 {
     font-size: 14px;
+    font-family: "LibrebaskervilleBold";
   }
 
   .footer-column3 p {
     font-size: 12px;
+    font-family: "Montserrat-Regular";
   }
 
   .footer-logo {
@@ -294,17 +325,25 @@
     padding: 0;
   }
 
+  .footer-nav a {
+    font-family: "Montserrat-Regular";
+  }
+
   .footer p {
     margin: 0;
     font-size: 12px;
+    font-family: "Montserrat-Regular";
   }
 
   /* Content */
   /* Save Our Seas - Protect Life
   Beneath the Breeze Text */
   .title-section .hero-title {
+    color: #071952;
     font-size: var(--text-size-header-primary) !important;
     width: 100%;
+    font-family: "LibreBaskervilleBold";
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   /* Description below */
@@ -312,16 +351,83 @@
     max-width: 100% !important;
     font-size: 16px !important;
     text-align: center !important;
+    font-family: "Montserrat-Regular";
   }
 
   .lifeblood-text,
   .seventy-percent-text {
     font-size: 18px !important;
+    font-family: "Montserrat-Regular";
   }
 
-  /* Infinite Slider */
-  .infinite-slider {
-    order: 4;
+  .content-container {
+    order: 3 !important;
+  }
+
+  /* Pictures in Containers*/
+  .content-container img {
+    width: 100% !important;
+    max-width: 400px !important;
+  }
+
+  .content-container h2 {
+    font-size: 24px !important;
+    text-align: center;
+    font-family: "LibreBaskervilleBold";
+  }
+
+  .content-container p {
+    font-size: 16px !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    font-family: "Montserrat-Regular";
+  }
+
+  .content-container .content-image p {
+    font-size: 12px !important;
+    color: rgb(255, 255, 255);
+  }
+
+  .text-span {
+    font-family: "Montserrat-Regular";
+  }
+
+  .content-image img {
+    width: 100% !important;
+    max-width: 1000px !important;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px !important;
+    height: 350px;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .card .card-title {
+    font-size: 24px;
+    text-align: center;
+    font-family: "LibreBaskervilleBold";
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .card .card-body {
+    font-size: 16px;
+    font-family: "Montserrat-Regular";
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+  .card-reference {
+    font-family: "Montserrat-Black";
+  }
+
+   /* Infinite Slider */
+   .infinite-slider {
+    order: 4 !important;
     padding: 30px 0 !important;
   }
 
@@ -348,56 +454,20 @@
     font-size: 12px !important;
   }
 
-  .content-container {
-    order: 3;
-  }
-
-  /* Pictures in Containers*/
-  .content-container img {
-    width: 100% !important;
-    max-width: 400px !important;
-  }
-
-  .content-container h2 {
-    font-size: 24px !important;
-    text-align: center;
-  }
-
-  .content-container p {
-    font-size: 16px !important;
-    max-width: 100% !important;
-    text-align: center !important;
-  }
-
-  .content-image img {
-    width: 100% !important;
-    max-width: 1000px !important;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 400px !important;
-    height: 350px;
-    border-radius: 20px;
-  }
-
-  .card .card-title {
-    font-size: 20px;
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-
-  .card .card-body {
-    font-size: 16px;
-    text-align: justify;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-  }
-
   /* END OF MEDIA QUERIES FOR HOME PAGE */
 
   /* NEWS PAGE */
+  .news-main-container::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    opacity: 0.5;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
+  }
+
   .news-banner-card img {
     padding-top: 7% !important;
     width: 100% !important;
@@ -412,16 +482,24 @@
   .news-banner-text h2 {
     font-size: var(--text-size-header-primary) !important;
     padding-bottom: 1px !important;
+    font-family: "LibreBaskervilleBold";
   }
 
   .news-banner-text h4 {
     font-size: var(--text-size-header-secondary) !important;
+    font-family: "LibreBaskervilleBold";
     text-align: center !important;
   }
 
   .news-title-section {
     font-size: 28px !important;
     text-align: center;
+  }
+
+  .news-title-section h1 {
+    color: #071952;
+    font-family: "LibreBaskervilleBold" !important;
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   .news-content-image {
@@ -433,20 +511,40 @@
   .news-content-image .info {
     top: 40px !important;
     color: white;
+    opacity: 1;
   }
 
   .news-content-image .info h1 {
     font-size: 20px !important;
     text-align: left !important;
     padding-bottom: 5px !important;
+    font-family: "LibreBaskervilleBold";
   }
 
   .news-content-image .info p {
     text-align: justify !important;
+    padding-bottom: 10px !important;
+    color:rgb(255, 255, 255);
   }
 
   .news-content-image .info .btn {
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+    right: 50px !important;
+    top: 290px !important;
+    opacity: 1 !important;
     left: 60px !important;
+    border-radius: 10px !important;
+    position: absolute !important;
+    display: block !important;
+  }
+
+  .date {
+    font-family: "Montserrat-Regular" !important;
+  }
+
+  .sdg {
+    font-family: "Montserrat-Regular" !important;
   }
 
   /* END OF MEDIA QUERIES FOR NEWS */
@@ -698,20 +796,41 @@
     flex-direction: column;
     overflow-y: hidden;
     margin: 30px 0 !important;
+    order: 3 !important;
+    background-color: transparent !important;
+  }
+
+  .about-main-container::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    opacity: 0.5;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
   }
 
   .about-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
-    margin: 0 auto;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    height: 100% !important;
+    margin: 0 auto !important;
+    background-color: transparent !important;
   }
 
   .about-img-box {
     width: 250px !important;
     height: 350px !important;
     margin: 0 10px !important;
+  }
+
+  .about-img-box::before,
+  .about-img-box::after {
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.4),
+        rgba(211, 202, 202, 0.025)) !important;
   }
 
   .about-img-box h3 {
@@ -728,6 +847,7 @@
 
   .about-img-box:hover h3 {
     left: 15px !important;
+    font-family: "LibreBaskervilleBold";
   }
 
   .about-img-box::before,
@@ -740,25 +860,39 @@
   .hero-title {
     font-size: 65px !important;
     text-align: center;
+    font-family: "LibreBaskervilleBold";
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   .about-title-section {
     margin-top: 50px !important;
     width: 100%;
+    order: 2 !important;
   }
 
   .about-title-section p {
     font-size: 20px !important;
     text-align: justify;
+    font-family: "Montserrat-Regular";
   }
 
   .about-content-section p,
   .meet-our-team-description {
     font-size: 20px !important;
+    font-family: "Montserrat-Regular";
   }
 
   .about-content-section {
-    margin-top: 50px !important;
+    margin-top: 40px !important;
+    order: 4 !important;
+  }
+
+  .meet-our-team-container {
+    order: 1 !important;
+  }
+
+  .team-member-name {
+    font-family: "Montserrat-Regular";
   }
 
   .team-card {
@@ -771,7 +905,7 @@
 
 /* End of 768px Media Query */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
   /* */
   .main {
@@ -1290,8 +1424,8 @@
   }
 
   .about-img-box:hover {
-    width: 400px !important;
-    height: 400px !important;
+    width: 300px !important;
+    height: 300px !important;
   }
 
   .about-img-box h3 {
@@ -1454,7 +1588,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
 
   .footer-column2 {
     text-align: center;
