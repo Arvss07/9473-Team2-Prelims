@@ -113,7 +113,7 @@
 @media screen and (max-width: 1024px) {
   .about-container {
     width: 100%;
-    height: 90vh;
+    height: 110vh !important;
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
@@ -123,7 +123,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 100%;
+    height: 110vh !important;
     margin: 0 auto;
   }
 
@@ -139,13 +139,14 @@
 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
-    order: 1;
+    order: 1 !important;
     padding: 10px 13% !important;
+    font-family: "LibreBaskervilleItalic";
   }
 
   /* Logo */
@@ -156,6 +157,7 @@
 
   .header h1 {
     font-size: 25px;
+    font-family: "LibreBaskervilleBold";
   }
 
   /* Banner Card */
@@ -178,12 +180,14 @@
   /* SDG 14 Text */
   .banner-text h4 {
     font-size: var(--text-size-content-title) !important;
+    font-family: "LibreBaskervilleBold";
     text-align: left;
   }
 
   /* Life Below Water Text */
   .banner-text h2 {
     font-size: calc(var(--text-size-header-primary) + 10px) !important;
+    font-family: "LibreBaskervilleBold";
     text-align: left;
   }
 
@@ -197,7 +201,7 @@
     position: fixed;
     top: 4px;
     left: 10px;
-    z-index: 2;
+    z-index: 3;
   }
 
   .navbar {
@@ -206,23 +210,31 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #071952;
+    background-color: #071952 transparent;
     padding-top: 60px;
-    z-index: 1;
-    transition: left 0.3s ease;
+    z-index: 2;
+    transition: left 0.3s ease-in-out;
   }
 
   .navbar a {
     display: block;
     margin: 10px 0;
     color: #eeeeee;
+    font-family: "Montserrat-Regular";
     font-size: 18px;
     padding: 10px;
     text-align: center;
+    pointer-events: none;
   }
 
   .sidebar-checkbox:checked~.navbar {
     left: 0;
+    background-color: #071952;
+    opacity: 1;
+  }
+
+  .sidebar-checkbox:checked~.navbar a {
+    pointer-events: auto;
   }
 
   .sidebar-checkbox:checked~.toggle-button {
@@ -231,21 +243,31 @@
   }
 
   .main {
-    order: 2;
+    z-index: 10 !important;
+    order: 2 !important;
+    background-color: transparent !important;
   }
 
   /* General Styles */
-  /* body {
-    font-size: 16px;
-    line-height: 1.5;
+  .home-main-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .home-main-container::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
     background-color: #eeeeee;
-  } */
+    opacity: 0.5;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
+  }
 
   /* Footer */
   .footer {
-    order: 5;
+    order: 5 !important;
   }
 
   .footer-column1 {
@@ -256,7 +278,15 @@
   .footer-column2 {
     width: 40% !important;
     text-align: center;
+  }
 
+  .footer-column2 .call-message {
+    font-family: "Montserrat-Regular";
+  }
+
+  .footer-column2 .call-message p {
+    white-space: nowrap;
+    font-family: "Montserrat-Regular";
   }
 
   .footer-column3 {
@@ -267,10 +297,12 @@
 
   .footer-column3 h3 {
     font-size: 14px;
+    font-family: "LibrebaskervilleBold";
   }
 
   .footer-column3 p {
     font-size: 12px;
+    font-family: "Montserrat-Regular";
   }
 
   .footer-logo {
@@ -294,17 +326,25 @@
     padding: 0;
   }
 
+  .footer-nav a {
+    font-family: "Montserrat-Regular";
+  }
+
   .footer p {
     margin: 0;
     font-size: 12px;
+    font-family: "Montserrat-Regular";
   }
 
   /* Content */
   /* Save Our Seas - Protect Life
   Beneath the Breeze Text */
   .title-section .hero-title {
+    color: #071952;
     font-size: var(--text-size-header-primary) !important;
     width: 100%;
+    font-family: "LibreBaskervilleBold";
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   /* Description below */
@@ -312,16 +352,83 @@
     max-width: 100% !important;
     font-size: 16px !important;
     text-align: center !important;
+    font-family: "Montserrat-Regular";
   }
 
   .lifeblood-text,
   .seventy-percent-text {
     font-size: 18px !important;
+    font-family: "Montserrat-Regular";
   }
 
-  /* Infinite Slider */
-  .infinite-slider {
-    order: 4;
+  .content-container {
+    order: 3 !important;
+  }
+
+  /* Pictures in Containers*/
+  .content-container img {
+    width: 100% !important;
+    max-width: 400px !important;
+  }
+
+  .content-container h2 {
+    font-size: 24px !important;
+    text-align: center;
+    font-family: "LibreBaskervilleBold";
+  }
+
+  .content-container p {
+    font-size: 16px !important;
+    max-width: 100% !important;
+    text-align: center !important;
+    font-family: "Montserrat-Regular";
+  }
+
+  .content-container .content-image p {
+    font-size: 12px !important;
+    color: rgb(255, 255, 255);
+  }
+
+  .text-span {
+    font-family: "Montserrat-Regular";
+  }
+
+  .content-image img {
+    width: 100% !important;
+    max-width: 1000px !important;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px !important;
+    height: 350px;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .card .card-title {
+    font-size: 24px;
+    text-align: center;
+    font-family: "LibreBaskervilleBold";
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .card .card-body {
+    font-size: 16px;
+    font-family: "Montserrat-Regular";
+    text-align: justify;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+  }
+
+  .card-reference {
+    font-family: "Montserrat-Black";
+  }
+
+   /* Infinite Slider */
+   .infinite-slider {
+    order: 4 !important;
     padding: 30px 0 !important;
   }
 
@@ -348,60 +455,34 @@
     font-size: 12px !important;
   }
 
-  .content-container {
-    order: 3;
-  }
-
-  /* Pictures in Containers*/
-  .content-container img {
-    width: 100% !important;
-    max-width: 400px !important;
-  }
-
-  .content-container h2 {
-    font-size: 24px !important;
-    text-align: center;
-  }
-
-  .content-container p {
-    font-size: 16px !important;
-    max-width: 100% !important;
-    text-align: center !important;
-  }
-
-  .content-image img {
-    width: 100% !important;
-    max-width: 1000px !important;
-  }
-
-  .card {
-    width: 100%;
-    max-width: 400px !important;
-    height: 350px;
-    border-radius: 20px;
-  }
-
-  .card .card-title {
-    font-size: 20px;
-    text-align: center;
-    font-weight: 600;
-    margin-bottom: 1rem;
-  }
-
-  .card .card-body {
-    font-size: 16px;
-    text-align: justify;
-    margin-bottom: 1.5rem;
-    flex-grow: 1;
-  }
-
   /* END OF MEDIA QUERIES FOR HOME PAGE */
 
   /* NEWS PAGE */
+  .news-main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .news-main-container::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    opacity: 0.5;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
+  }
+
+  .news-banner-card {
+    z-index: 10 !important;
+  }
+
   .news-banner-card img {
     padding-top: 7% !important;
     width: 100% !important;
     height: auto !important;
+    z-index: 10 !important;
   }
 
   .news-banner-text {
@@ -412,16 +493,25 @@
   .news-banner-text h2 {
     font-size: var(--text-size-header-primary) !important;
     padding-bottom: 1px !important;
+    font-family: "LibreBaskervilleBold";
   }
 
   .news-banner-text h4 {
     font-size: var(--text-size-header-secondary) !important;
+    font-family: "LibreBaskervilleBold";
     text-align: center !important;
   }
 
   .news-title-section {
     font-size: 28px !important;
     text-align: center;
+    z-index: 10 !important;
+  }
+
+  .news-title-section h1 {
+    color: #071952;
+    font-family: "LibreBaskervilleBold" !important;
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   .news-content-image {
@@ -431,23 +521,42 @@
   }
 
   .news-content-image .info {
-    top: 20px !important;
+    top: 40px !important;
     color: white;
+    opacity: 1;
   }
 
   .news-content-image .info h1 {
     font-size: 20px !important;
     text-align: left !important;
     padding-bottom: 5px !important;
+    font-family: "LibreBaskervilleBold";
   }
 
   .news-content-image .info p {
     text-align: justify !important;
-    padding-bottom: calc(height - 2px) !important;
+    padding-bottom: 10px !important;
+    color:rgb(255, 255, 255);
   }
 
   .news-content-image .info .btn {
-    left: 37px !important;
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+    right: 50px !important;
+    top: 290px !important;
+    opacity: 1 !important;
+    left: 60px !important;
+    border-radius: 10px !important;
+    position: absolute !important;
+    display: block !important;
+  }
+
+  .date {
+    font-family: "Montserrat-Regular" !important;
+  }
+
+  .sdg {
+    font-family: "Montserrat-Regular" !important;
   }
 
   /* END OF MEDIA QUERIES FOR NEWS */
@@ -467,15 +576,19 @@
 
   .left-text {
     font-size: 120px !important;
+    font-family: "LibreBaskervilleBold" !important;
   }
 
   .right-text {
     font-size: var(--text-size-content-title) !important;
+    font-family: "LibreBaskervilleBold" !important;
   }
 
   .initiatives-title {
     font-size: var(--text-size-content-title) !important;
     color: #071952 !important;
+    font-family: "LibreBaskervilleBold" !important;
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   .initiatives-title-section {
@@ -511,11 +624,17 @@
   .initiatives-content-info h3 {
     font-size: 20px !important;
     text-align: center !important;
+    font-family: "LibreBaskervilleBold" !important;
+  }
+
+  .initiatives-content-info p {
+    font-family: "Montserrat-Regular";
+    text-align: center !important;
   }
 
   .btn {
     padding: 15px 40px;
-    left: 125px;
+    left: 100px;
     border: none;
     outline: none;
     color: white;
@@ -525,6 +644,7 @@
     cursor: pointer;
     z-index: 0;
     border-radius: 12px;
+    text-align: center;
   }
 
   .btn::before {
@@ -581,6 +701,114 @@
   .todo-info {
     font-size: 16px !important;
   }
+  
+  .main-donation-container{
+    position: relative;
+    margin: 0 65px !important;
+    padding: 20px !important;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 5px solid #37B7C3;
+    height: 750px !important;
+  }
+
+  .main-donation-container img {
+    position: absolute;
+    top: 530px !important;
+    left: 200px !important;
+    max-width: 400px !important;
+    height: auto;
+    align-items: center !important;
+  }
+  
+  .main-donation-content {
+    width: 95% !important;
+  }
+  
+  .main-donation-content h2 {
+    font-size: calc(var(--text-size-header-primary) - 8px);
+    text-align: center !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main-donation-progress h6{
+    margin-left: 20px;
+  }
+  
+  .main-donation-content p {
+    margin-left: 20px;
+    font-size: var(--text-size-anchor);
+    text-align: justify;
+    line-height: 1.25;
+  }
+  
+  .progress-bar {
+    position: relative;
+    width: 450px !important;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #eeeeee;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto;
+  }
+
+  .main-donation-progress{
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+  }
+  
+  .progress-bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42%;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.7;
+    text-align: center;
+    height: 100%;
+    color: #fff;
+    background: #37B7C3;
+    border-radius: 30px;
+  }
+  
+  .main-donation-buttons {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 20px;
+    width: 35%;
+    margin: 0 auto;
+  }
+  
+  .donate-button {
+    text-decoration: none;
+    padding: 1.0rem 1.0rem !important;
+    background: #37B7C3;
+    letter-spacing: 1.5px;
+    color: #EEEEEE;
+    font-size: var(--text-size-anchor);
+    font-weight: 1000;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .learnmore-button {
+    text-decoration: underline;
+    padding: 1.0rem 1.0rem !important;
+    letter-spacing: 1.5px;
+    color: #37B7C3;
+    font-size: var(--text-size-anchor);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    border-radius: 5px;
+  }
 
   /*About Webpage */
   .about-container {
@@ -590,20 +818,42 @@
     flex-direction: column;
     overflow-y: hidden;
     margin: 30px 0 !important;
+    order: 3 !important;
+    background-color: transparent !important;
+    z-index: 10 !important;
+  }
+
+  .about-main-container::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #eeeeee;
+    opacity: 0.5;
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, #eeeeee 40px),
+      repeating-linear-gradient(#cbceff, #bdc1ff);
   }
 
   .about-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
-    margin: 0 auto;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    height: 100% !important;
+    margin: 0 auto !important;
+    background-color: transparent !important;
   }
 
   .about-img-box {
     width: 250px !important;
     height: 350px !important;
     margin: 0 10px !important;
+  }
+
+  .about-img-box::before,
+  .about-img-box::after {
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.4),
+        rgba(211, 202, 202, 0.025)) !important;
   }
 
   .about-img-box h3 {
@@ -620,6 +870,7 @@
 
   .about-img-box:hover h3 {
     left: 15px !important;
+    font-family: "LibreBaskervilleBold";
   }
 
   .about-img-box::before,
@@ -632,25 +883,43 @@
   .hero-title {
     font-size: 65px !important;
     text-align: center;
+    font-family: "LibreBaskervilleBold";
+    animation: glow 1s ease-in-out infinite alternate;
   }
 
   .about-title-section {
     margin-top: 50px !important;
     width: 100%;
+    order: 2 !important;
+    z-index: 10 !important;
   }
 
   .about-title-section p {
     font-size: 20px !important;
     text-align: justify;
+    font-family: "Montserrat-Regular";
+    z-index: 10 !important;
   }
 
   .about-content-section p,
   .meet-our-team-description {
     font-size: 20px !important;
+    font-family: "Montserrat-Regular";
   }
 
   .about-content-section {
-    margin-top: 50px !important;
+    margin-top: 40px !important;
+    order: 4 !important;
+    z-index: 10 !important;
+  }
+
+  .meet-our-team-container {
+    order: 1 !important;
+    z-index: 10 !important;
+  }
+
+  .team-member-name {
+    font-family: "Montserrat-Regular";
   }
 
   .team-card {
@@ -663,7 +932,7 @@
 
 /* End of 768px Media Query */
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
 
   /* */
   .main {
@@ -819,7 +1088,6 @@
     width: 100% !important;
     max-width: 400px !important;
     height: 250px !important;
-    z-index: 10;
   }
 
   .content-container h2 {
@@ -834,6 +1102,11 @@
     text-align: center !important;
     font-family: "Montserrat-Regular";
     color: #333333;
+  }
+
+  .content-container .content-image p {
+    font-size: 12px !important;
+    color: rgb(255, 255, 255);
   }
 
   .text-span {
@@ -967,31 +1240,45 @@
   .news-content-image {
     width: 100%;
     max-width: 400px !important;
-    height: 200px !important;
+    height: 250px !important;
+  }
+
+  .news-content-image img{
+    height: 250px !important
   }
 
   .news-content-image .info {
-    /* top: 20px !important;
+    top: 10px !important;
     color: white !important;
-    z-index: 10 !important; */
-    display: none;
+    opacity: 1;
   }
 
   .news-content-image .info h1 {
-    font-size: 22px !important;
+    margin-top: 10px !important;
+    font-size: 18px !important;
     text-align: left !important;
-    padding-bottom: 5px !important;
+    padding-bottom: 0px !important;
     font-family: "LibreBaskervilleBold";
   }
 
   .news-content-image .info p {
+    font-size: 12px !important;
     text-align: justify !important;
-    padding-bottom: calc(height - 2px) !important;
+    padding-bottom: 10px !important;
+    color:rgb(255, 255, 255);
   }
 
   .news-content-image .info .btn {
-    left: 37px !important;
-  }
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+    right: 50px !important;
+    top: 175px !important;
+    opacity: 1 !important;
+    left: 50px !important;
+    border-radius: 10px !important;
+    position: absolute !important;
+    display: block !important;
+}
 
   .date {
     padding-bottom: 5px !important;
@@ -1164,8 +1451,8 @@
   }
 
   .about-img-box:hover {
-    width: 400px !important;
-    height: 400px !important;
+    width: 300px !important;
+    height: 300px !important;
   }
 
   .about-img-box h3 {
@@ -1328,7 +1615,8 @@
   }
 }
 
-@media (max-width: 425px) {
+@media screen and (max-width: 425px) {
+
   .footer-column2 {
     text-align: center;
     column-gap: 10px;
@@ -1341,6 +1629,12 @@
     width: auto !important;
     font-family: "Montserrat-Regular";
   }
+
+  .news-content-image .info .btn {
+    padding: 10px 15px !important;
+    font-size: 15px !important;
+    font-weight: bold !important;
+}
 }
 
 @keyframes glow {
