@@ -74,14 +74,14 @@
 @font-face {
   font-family: "Lora";
   src: url(../res/fonts/Lora-Bold.ttf) format("truetype");
-  font-weight: bolder;
+  font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Lora";
   src: url(../res/fonts/Lora-BoldItalic.ttf) format("truetype");
-  font-weight: bolder;
+  font-weight: 900;
   font-style: italic;
 }
 
@@ -137,7 +137,7 @@
 @font-face {
   font-family: "LibreBaskerville";
   src: url(..\res\fonts\LibreBaskerville-Italic.ttf) format("truetype");
-  font-weight: italic;
+  font-style: italic;
 }
 
 @font-face {
