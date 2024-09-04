@@ -47,18 +47,22 @@
   color: black;
 }
 
-.initiatives-row {
+.initiatives-container {
   display: flex;
-  margin: 10px;
-  max-width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
-  justify-content: space-between;
+  margin: 0 auto;
+  padding: 1.25rem;
 }
 
 .initiatives-content {
   display: flex;
   background-color: #fff;
-  width: 50%;
+  width: 750px;
+  height: 400px;
+  align-items: center;
   padding: 15px 1%;
   border-radius: 5px;
   transition: transform 0.3s, background-color 0.3s ease;
@@ -72,8 +76,7 @@
 
 .initiatives-content-image img {
   position: relative;
-  height: 300px;
-  width: auto;
+  width: 260px;
 }
 
 .initiatives-content-info {
