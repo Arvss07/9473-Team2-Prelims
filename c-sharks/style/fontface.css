@@ -129,19 +129,19 @@
 
 /* Libre Baskerville */
 @font-face {
-  font-family: "LibreBaskervilleBold";
+  font-family: "LibreBaskerville";
   src: url(..\res\fonts\LibreBaskerville-Bold.ttf) format("truetype"); 
   font-weight: bold;
 }
 
 @font-face {
-  font-family: "LibreBaskervilleItalic";
+  font-family: "LibreBaskerville";
   src: url(..\res\fonts\LibreBaskerville-Italic.ttf) format("truetype");
   font-weight: italic;
 }
 
 @font-face {
-  font-family: "LibreBaskervilleRegular";
+  font-family: "LibreBaskerville";
   src: url(..\res\fonts\LibreBaskerville-Regular.ttf) format("truetype");
   font-weight: normal;
 }
