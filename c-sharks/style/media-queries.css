@@ -146,7 +146,7 @@
   .header {
     order: 1 !important;
     padding: 10px 13% !important;
-    font-family: "LibreBaskervilleItalic";
+    font-family: "LibreBaskerville";
   }
 
   /* Logo */
@@ -157,7 +157,7 @@
 
   .header h1 {
     font-size: 25px;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
   }
 
   /* Banner Card */
@@ -180,14 +180,14 @@
   /* SDG 14 Text */
   .banner-text h4 {
     font-size: var(--text-size-content-title) !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     text-align: left;
   }
 
   /* Life Below Water Text */
   .banner-text h2 {
     font-size: calc(var(--text-size-header-primary) + 10px) !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskervilleB";
     text-align: left;
   }
 
@@ -297,7 +297,7 @@
 
   .footer-column3 h3 {
     font-size: 14px;
-    font-family: "LibrebaskervilleBold";
+    font-family: "Librebaskerville";
   }
 
   .footer-column3 p {
@@ -343,7 +343,7 @@
     color: #071952;
     font-size: var(--text-size-header-primary) !important;
     width: 100%;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     animation: glow 1s ease-in-out infinite alternate;
   }
 
@@ -374,7 +374,7 @@
   .content-container h2 {
     font-size: 24px !important;
     text-align: center;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
   }
 
   .content-container p {
@@ -409,7 +409,7 @@
   .card .card-title {
     font-size: 24px;
     text-align: center;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     font-weight: 600;
     margin-bottom: 1rem;
   }
@@ -493,12 +493,12 @@
   .news-banner-text h2 {
     font-size: var(--text-size-header-primary) !important;
     padding-bottom: 1px !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
   }
 
   .news-banner-text h4 {
     font-size: var(--text-size-header-secondary) !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     text-align: center !important;
   }
 
@@ -510,7 +510,7 @@
 
   .news-title-section h1 {
     color: #071952;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate;
   }
 
@@ -530,7 +530,7 @@
     font-size: 20px !important;
     text-align: left !important;
     padding-bottom: 5px !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
   }
 
   .news-content-image .info p {
@@ -576,18 +576,18 @@
 
   .left-text {
     font-size: 120px !important;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
   }
 
   .right-text {
     font-size: var(--text-size-content-title) !important;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
   }
 
   .initiatives-title {
     font-size: var(--text-size-content-title) !important;
     color: #071952 !important;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate;
   }
 
@@ -624,7 +624,7 @@
   .initiatives-content-info h3 {
     font-size: 20px !important;
     text-align: center !important;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
   }
 
   .initiatives-content-info p {
@@ -870,7 +870,7 @@
 
   .about-img-box:hover h3 {
     left: 15px !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
   }
 
   .about-img-box::before,
@@ -883,7 +883,7 @@
   .hero-title {
     font-size: 65px !important;
     text-align: center;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     animation: glow 1s ease-in-out infinite alternate;
   }
 
@@ -946,7 +946,7 @@
   .header {
     order: 1;
     padding: 10px 13% !important;
-    font-family: "LibreBaskervilleItalic";
+    font-family: "LibreBaskerville";
   }
 
   /* Logo */
@@ -957,7 +957,7 @@
 
   .header h1 {
     font-size: 25px;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
   }
 
   /* Banner Card */
@@ -976,7 +976,7 @@
   /* SDG 14 Text */
   .banner-text h4 {
     font-size: 50px !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     text-align: left;
     padding-bottom: 0% !important;
   }
@@ -984,7 +984,7 @@
   /* Life Below Water Text */
   .banner-text h2 {
     font-size: 30px !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     padding: 0% !important;
   }
 
@@ -1061,7 +1061,7 @@
   Beneath the Breeze Text */
   .title-section h1 {
     color: #071952;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     animation: glow 1s ease-in-out infinite alternate;
   }
 
@@ -1093,7 +1093,7 @@
   .content-container h2 {
     font-size: 26px !important;
     text-align: center;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
   }
 
   .content-container p {
@@ -1124,7 +1124,7 @@
 
   .card .card-title {
     font-size: 24px;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     text-align: center;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -1199,14 +1199,14 @@
   /* SDG 14 text */
   .news-banner-text h2 {
     font-size: 30px;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     padding-bottom: 1px !important;
   }
 
   /* Safeguarding Our Oceans Text */
   .news-banner-text h4 {
     font-size: 20px;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     text-align: center !important;
   }
 
@@ -1233,7 +1233,7 @@
 
   .news-title-section h1 {
     color: #071952;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate;
   }
 
@@ -1258,7 +1258,7 @@
     font-size: 18px !important;
     text-align: left !important;
     padding-bottom: 0px !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
   }
 
   .news-content-image .info p {
@@ -1324,18 +1324,18 @@
   /* 14 Text */
   .left-text {
     font-size: 110px !important;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
   }
 
   /* Life Below Water */
   .right-text {
     font-size: 20px !important;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
   }
 
   .initiatives-title {
     color: #071952;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate;
   }
 
@@ -1372,7 +1372,7 @@
   .initiatives-content-info h3 {
     font-size: 24px !important;
     text-align: center !important;
-    font-family: "LibreBaskervilleBold" !important;
+    font-family: "LibreBaskerville" !important;
   }
 
   .initiatives-content-info p {
@@ -1465,7 +1465,7 @@
 
   .about-img-box:hover h3 {
     left: 15px !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
   }
 
   .about-img-box::before,
@@ -1477,7 +1477,7 @@
 
   .hero-title {
     font-size: 30px !important;
-    font-family: "LibreBaskervilleBold";
+    font-family: "LibreBaskerville";
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -1577,7 +1577,7 @@
 
   .footer-column3 h3 {
     font-size: 16px;
-    font-family: "LibrebaskervilleBold";
+    font-family: "Librebaskerville";
   }
 
   .footer-column3 p {
