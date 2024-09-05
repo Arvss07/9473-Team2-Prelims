@@ -1562,23 +1562,23 @@
 
   .initiatives-banner-text {
     top: 25% !important;
-    left: 7px !important;
+    left: 40px !important;
     text-align: center !important;
-    width: 80% !important;
+    width: 90% !important;
   }
 
   /* 14 Text */
-  .left-text {
-    font-size: 100px !important;
+  .left-text h1 {
+    font-size: 170px !important;
     font-family: "LibreBaskerville" !important;
     margin-left: 20px;
     margin-top: 20px;
   }
 
   /* Life Below Water */
-  .right-text {
-    font-size: 20px !important;
-    font-family: "LibreBaskervilleBold" !important;
+  .right-text h1 {
+    font-size: 30px !important;
+    font-family: "LibreBaskerville" !important;
   }
 
   .initiatives-title-section {
@@ -1601,7 +1601,7 @@
 
   .initiatives-row {
     flex-direction: column !important;
-    gap: 10px;
+    gap: 20px !important;
     justify-content: flex-start;
   }
 
@@ -1609,6 +1609,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px !important;
     z-index: 10;
   }
 
@@ -1635,15 +1636,16 @@
     background: transparent;
   }
 
-  .todo-info {
+  .todo-info p {
     font-size: 16px !important;
+    font-family: "Montserrat-Regular" !important;
   }
 
   .todo-row .todo-content .todo-image-icon img{
     height: 60px !important;
   }
 
-  /* DONTATION CONTAINER */
+  /* DONATION CONTAINER */
   .main-donation-container {
     position: relative !important;
     margin: 0 auto !important;
@@ -1676,13 +1678,16 @@
 
   .main-donation-container p {
     font-size: 16px !important;
+    font-family: "Montserrat-Regular" !important;
   }
+
   .donate-button {
     padding: 0.50 !important;
     font-size: 12px !important;
     font-weight: 500 !important;
     text-wrap: nowrap;
     z-index: 8 !important;
+    font-family: "Montserrat-Regular" !important;
   }
 
   .learnmore-button {
@@ -1691,6 +1696,7 @@
     font-weight: 500 !important;
     text-wrap: nowrap;
     z-index: 8 !important;
+    text-align: center !important;
   }
 
   .main-donation-container img {
@@ -1708,16 +1714,30 @@
   .other-donations-title-section {
     position: relative;
     z-index: 10 !important;
+    font-family: "LibreBaskerville" !important;
   }
 
   .other-donations-title-section .other-donations-title {
     font-size: 35px !important;
     text-align: center !important;
+    font-family: "LibreBaskerville" !important;
+  }
+
+  .donation-details h3 {
+    font-family: "LibreBaskerville" !important;
   }
 
   .donation-cards {
     position: relative;
     z-index: 10 !important;
+  }
+
+  .donate-button {
+    font-family: "Montserrat-Regular" !important;
+  }
+
+  .about-donation p {
+    font-family: "Montserrat-Regular" !important;
   }
 
   /* END OF MEDIA QUERIES FOR INITIATIVES */
