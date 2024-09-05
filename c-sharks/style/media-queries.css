@@ -137,6 +137,40 @@
     width: 250px !important;
   }
 
+  .footer-column1 {
+    width: 40%;
+    align-items: center;
+  }
+
+  .footer-column2 {
+    flex-direction: row;
+    width: 50% !important;
+    text-align: center;
+  }
+
+  .footer-column2 .call-message p {
+    white-space: nowrap;
+  }
+
+  .footer-column3 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .footer-nav a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .footer-nav p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
