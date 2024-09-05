@@ -137,9 +137,45 @@
     width: 250px !important;
   }
 
+  .initiatives-banner-text{
+    top: 35% !important;
+    left: 10px !important;
+  }
+
+  .initiatives-banner-text .left-text{
+    font-size: 130px;
+  }
+
+  .initiatives-banner-text .right-text{
+    font-size: 50px;
+  }
+
+  .main-donation-container{
+    height: 750px !important;
+  }
+
+  .main-donation-container .main-donation-wave {
+    width: auto !important;
+    bottom: -25px !important;
+    right: -40px !important;
+  }
+
+  .main-donation-content {
+    width: 100% !important;
+  }
+
   .footer-column1 {
     width: 40%;
     align-items: center;
+  }
+
+  .main-donation-container img {
+    width: 500px !important;
+    height: auto !important;
+  }
+
+  .progress-bar {
+    width: 100% !important;
   }
 
   .footer-column2 {
