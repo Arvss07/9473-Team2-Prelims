@@ -1395,6 +1395,67 @@
       repeating-linear-gradient(#cbceff, #bdc1ff);
   }
 
+  .initiatives-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .initiatives-container .initiatives-content {
+    width: 500px;
+    height: 450px;
+    transition: all 0.5s ease-in-out;
+  }
+
+
+  .initiatives-container .initiatives-content .initiatives-content-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    opacity: 1;
+  }
+
+  .initiatives-container .initiatives-content .initiatives-content-info {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 0 15px !important;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .initiatives-container .initiatives-content .initiatives-content-info p {
+    width: 300px !important;
+    height: 90px;
+    text-align: justify !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .initiatives-container .initiatives-content:hover {
+    margin: 20px 0;
+    width: 500px;
+    height: 820px;
+  }
+
+  .initiatives-container .initiatives-content .initiatives-content-info p:hover {
+    height: auto;
+    text-overflow: visible;
+  }
+
+  .initiatives-container .initiatives-content .initiatives-content-image img {
+    width: 150px !important;
+    height: 150px !important;
+    
+  }
+  /* PAAYOSSSSSS */
+  .initiatives-container .initiatives-content .initiatives-content-info .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
   .initiatives-banner-card img {
     padding-top: 12% !important;
     width: 100% !important;
@@ -1447,23 +1508,10 @@
   }
 
   .initiatives-content {
-    width: 100% !important;
-    max-width: 440px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 10;
-  }
-
-  .initiatives-content-image img {
-    height: 300px !important;
-    width: 300px !important;
-  }
-
-  .initiatives-content-info {
-    width: 100%;
-    padding-left: 10px !important;
-    padding-right: 10px !important;
   }
 
   .initiatives-content-info h3 {
