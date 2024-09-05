@@ -622,7 +622,7 @@
   .initiatives-container .initiatives-content {
     width: 500px;
     height: 450px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     overflow: hidden !important;
     text-overflow: hidden !important;
   }
@@ -640,7 +640,7 @@
     width: 100%;
     height: 100px;
     padding: 0 15px !important;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
 .initiatives-container .initiatives-content .initiatives-content-info p {
@@ -648,27 +648,21 @@
     height: 90px;
     text-align: justify !important;
     overflow: hidden !important;
-    /* text-overflow: ellipsis; */
   }
 
 .initiatives-container .initiatives-content:hover {
     margin: 20px 0;
     width: 500px;
-    height: 820px;
-    overflow: visible !important;
-    text-overflow: visible !important;
+    height: 800px;
   }
 
 .initiatives-container .initiatives-content:hover .initiatives-content-info p {
     height: auto;
-    overflow: visible !important;
-    /* text-overflow: visible; */
   }
 
   .initiatives-container .initiatives-content .initiatives-content-image img {
     width: 150px !important;
     height: 150px !important;
-    
   }
 
   /* PAAYOSSSSSS */
@@ -1473,13 +1467,13 @@
 
   .initiatives-container .initiatives-content {
     width: 500px;
-    height: 450px;
-    transition: all 0.5s ease-in-out;
+    height: 475px;
+    transition: all 0.3s ease-in-out;
     overflow: hidden !important;
     text-overflow: hidden !important;
   }
 
-.initiatives-container .initiatives-content .initiatives-content-image {
+  .initiatives-container .initiatives-content .initiatives-content-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1487,7 +1481,7 @@
     opacity: 1;
   }
 
-.initiatives-container .initiatives-content .initiatives-content-info {
+  .initiatives-container .initiatives-content .initiatives-content-info {
     position: relative;
     width: 100%;
     height: 100px;
@@ -1495,32 +1489,26 @@
     transition: all 0.3s ease-in-out !important;
   }
 
-.initiatives-container .initiatives-content .initiatives-content-info p {
+  .initiatives-container .initiatives-content .initiatives-content-info p {
     width: 300px !important;
     height: 90px;
     text-align: justify !important;
     overflow: hidden !important;
-    /* text-overflow: ellipsis; */
   }
 
-.initiatives-container .initiatives-content:hover {
+  .initiatives-container .initiatives-content:hover {
     margin: 20px 0;
     width: 500px;
     height: 820px;
-    overflow: visible !important;
-    text-overflow: visible !important;
   }
 
-.initiatives-container .initiatives-content:hover .initiatives-content-info p {
+  .initiatives-container .initiatives-content:hover .initiatives-content-info p {
     height: auto;
-    overflow: visible !important;
-    /* text-overflow: visible; */
   }
 
   .initiatives-container .initiatives-content .initiatives-content-image img {
     width: 150px !important;
     height: 150px !important;
-    
   }
 
   /* PAAYOSSSSSS */
