@@ -613,6 +613,73 @@
       repeating-linear-gradient(#cbceff, #bdc1ff);
   }
 
+  .initiatives-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .initiatives-container .initiatives-content {
+    width: 500px;
+    height: 450px;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden !important;
+    text-overflow: hidden !important;
+  }
+
+.initiatives-container .initiatives-content .initiatives-content-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    opacity: 1;
+  }
+
+.initiatives-container .initiatives-content .initiatives-content-info {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 0 15px !important;
+    transition: all 0.5s ease-in-out;
+  }
+
+.initiatives-container .initiatives-content .initiatives-content-info p {
+    width: 300px !important;
+    height: 90px;
+    text-align: justify !important;
+    overflow: hidden !important;
+    /* text-overflow: ellipsis; */
+  }
+
+.initiatives-container .initiatives-content:hover {
+    margin: 20px 0;
+    width: 500px;
+    height: 820px;
+    overflow: visible !important;
+    text-overflow: visible !important;
+  }
+
+.initiatives-container .initiatives-content:hover .initiatives-content-info p {
+    height: auto;
+    overflow: visible !important;
+    /* text-overflow: visible; */
+  }
+
+  .initiatives-container .initiatives-content .initiatives-content-image img {
+    width: 150px !important;
+    height: 150px !important;
+    
+  }
+
+  /* PAAYOSSSSSS */
+  .initiatives-container .initiatives-content .initiatives-content-info .btn {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+
   .initiatives-banner-card img {
     padding-top: 7% !important;
     width: 100% !important;
@@ -693,7 +760,6 @@
 
   .btn {
     padding: 15px 40px;
-    left: 100px;
     border: none;
     outline: none;
     color: white;
@@ -704,6 +770,10 @@
     z-index: 0;
     border-radius: 12px;
     text-align: center;
+    align-items: center !important;
+    justify-content: center !important;
+    width: auto !important;
+    margin: 0 auto !important;
   }
 
   .btn::before {
@@ -1362,7 +1432,7 @@
     border-radius: 10px !important;
     position: absolute !important;
     display: block !important;
-}
+  }
 
   .date {
     padding-bottom: 5px !important;
@@ -1404,10 +1474,11 @@
     width: 500px;
     height: 450px;
     transition: all 0.5s ease-in-out;
+    overflow: hidden !important;
+    text-overflow: hidden !important;
   }
 
-
-  .initiatives-container .initiatives-content .initiatives-content-image {
+.initiatives-container .initiatives-content .initiatives-content-image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1415,31 +1486,34 @@
     opacity: 1;
   }
 
-  .initiatives-container .initiatives-content .initiatives-content-info {
+.initiatives-container .initiatives-content .initiatives-content-info {
     position: relative;
     width: 100%;
     height: 100px;
     padding: 0 15px !important;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out !important;
   }
 
-  .initiatives-container .initiatives-content .initiatives-content-info p {
+.initiatives-container .initiatives-content .initiatives-content-info p {
     width: 300px !important;
     height: 90px;
     text-align: justify !important;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow: hidden !important;
+    /* text-overflow: ellipsis; */
   }
 
-  .initiatives-container .initiatives-content:hover {
+.initiatives-container .initiatives-content:hover {
     margin: 20px 0;
     width: 500px;
     height: 820px;
+    overflow: visible !important;
+    text-overflow: visible !important;
   }
 
-  .initiatives-container .initiatives-content .initiatives-content-info p:hover {
+.initiatives-container .initiatives-content:hover .initiatives-content-info p {
     height: auto;
-    text-overflow: visible;
+    overflow: visible !important;
+    /* text-overflow: visible; */
   }
 
   .initiatives-container .initiatives-content .initiatives-content-image img {
@@ -1447,12 +1521,13 @@
     height: 150px !important;
     
   }
+
   /* PAAYOSSSSSS */
   .initiatives-container .initiatives-content .initiatives-content-info .btn {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   .initiatives-banner-card img {
@@ -1522,10 +1597,6 @@
   .initiatives-content-info p {
     font-family: "Montserrat-Regular";
     text-align: center !important;
-  }
-
-  .btn {
-    display: none;
   }
 
   .todo-row {
