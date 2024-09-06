@@ -1208,6 +1208,10 @@
     font-family: "LibreBaskerville";
   }
 
+  .banner-card {
+    background: url('path-to-smaller-image.jpg');
+  }
+
   /* Banner Card */
   .banner-card img {
     padding-top: 12% !important;

@@ -6,6 +6,8 @@ main {
 
 .banner-card {
   position: relative;
+  height: 100%;
+  overflow: hidden;
 }
 
 .banner-card img {
