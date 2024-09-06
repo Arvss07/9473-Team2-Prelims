@@ -151,6 +151,14 @@
   font-size: 20px;
 }
 
+.bulb-mobile {
+  display: none;
+}
+
+.bulb-desktop {
+  display: block;
+}
+
 /* Main Donation Section */
 
 .donation-title-section {
