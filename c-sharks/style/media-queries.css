@@ -1656,8 +1656,8 @@
   }
 
   .initiatives-container .initiatives-content {
-    width: 500px;
-    height: 475px;
+    width: 400px !important;
+    height: 615px !important;
     transition: all 0.3s ease-in-out;
     overflow: hidden !important;
     text-overflow: hidden !important;
@@ -1679,9 +1679,15 @@
     transition: all 0.3s ease-in-out !important;
   }
 
+  .initiatives-container .initiatives-content .initiatives-content-info h3 {
+    font-size: var(--text-size-header-secondary);
+    line-height: 30px;
+  }
+
   .initiatives-container .initiatives-content .initiatives-content-info p {
     width: 300px !important;
-    height: 90px;
+    height: 246px;
+    font-size: 17px;
     text-align: justify !important;
     overflow: hidden !important;
   }
@@ -1719,23 +1725,24 @@
   }
 
   .initiatives-banner-text {
-    top: 25% !important;
-    left: 40px !important;
+    top: 29% !important;
+    left: 34px !important;
     text-align: center !important;
     width: 90% !important;
   }
 
   /* 14 Text */
-  .left-text h1 {
-    font-size: 170px !important;
+  .initiatives-banner-text .left-text h1 {
+    font-size: 135px !important;
     font-family: "LibreBaskerville" !important;
     margin-left: 20px;
     margin-top: 20px;
   }
 
   /* Life Below Water */
-  .right-text h1 {
-    font-size: 30px !important;
+  .initiatives-banner-text .right-text h1 {
+    width: 200px;
+    font-size: 45px !important;
     font-family: "LibreBaskerville" !important;
   }
 
