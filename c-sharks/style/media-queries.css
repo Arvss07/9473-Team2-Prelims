@@ -712,13 +712,13 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 1;
+    background-color: #1a274e;
     background-image: repeating-radial-gradient(
-        circle at 0 0,
-        transparent 0,
-        #eeeeee 40px
-      ),
-      repeating-linear-gradient(#cbceff, #bdc1ff);
+      circle at 0 0,
+      transparent 0,
+      #1e2a5e 18px
+    );
   }
 
   .initiatives-container {
@@ -823,7 +823,7 @@
   .initiatives-title-section .initiatives-title,
   .donation-title-section .initiatives-title {
     position: relative;
-    color: #071952 !important;
+    color: #E1D7B7 !important;
     font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate !important;
     z-index: 10 !important;
@@ -950,6 +950,7 @@
   }
 
   .todo-info p {
+    color: #fff;
     font-size: 16px !important;
     font-family: "Montserrat-Regular" !important;
   }
