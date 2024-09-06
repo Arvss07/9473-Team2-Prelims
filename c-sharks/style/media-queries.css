@@ -447,7 +447,7 @@
   }
 
   .content-container:hover{
-    background-color: #1e2a5e !important;
+    background-color: transparent !important;
   }
 
   /* Pictures in Containers*/
@@ -1382,7 +1382,7 @@
   .infinite-slider {
     order: 4;
     padding: 30px 0 !important;
-    background-color: #1e2a5e !important;
+    background-color: transparent !important;
   }
 
   .infinite-slider::before,
