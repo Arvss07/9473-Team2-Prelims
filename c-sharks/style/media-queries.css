@@ -2036,6 +2036,18 @@
 }
 
 @media screen and (max-width: 425px) {
+  .toggle-button {
+    background-color: transparent;
+  }
+  
+  .navbar {
+    background-color: transparent; 
+  }
+
+  .navbar > a::after {
+    background-color: transparent;
+  }
+
   .banner-text {
     top: 60% !important;
   }
