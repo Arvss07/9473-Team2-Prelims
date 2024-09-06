@@ -1668,8 +1668,8 @@
   }
 
   .initiatives-container .initiatives-content {
-    width: 400px !important;
-    height: 660px !important;
+    width: 500px !important;
+    height: 500px !important;
     transition: all 0.3s ease-in-out;
     overflow: hidden !important;
   }
@@ -1697,7 +1697,7 @@
 
   .initiatives-container .initiatives-content .initiatives-content-info p {
     width: 300px !important;
-    height: 313px;
+    height: 100px;
     font-size: 17px;
     text-align: justify !important;
     overflow: hidden !important;
