@@ -1746,13 +1746,14 @@
   .initiatives-banner-text .left-text h1 {
     font-size: 130px !important;
     font-family: "LibreBaskerville" !important;
-    margin-left: 20px;
+    margin-left: 45px;
     margin-top: 20px;
   }
 
   /* Life Below Water */
   .initiatives-banner-text .right-text h1 {
-    font-size: 32px !important;
+    width: 200px;
+    font-size: 48px !important;
     font-family: "LibreBaskerville" !important;
   }
 
