@@ -227,6 +227,7 @@
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
+    background-color: #1E2A5E;
     order: 1 !important;
     padding: 10px 13% !important;
     font-family: "LibreBaskerville";
@@ -504,7 +505,7 @@
     max-width: 100% !important;
     text-align: center !important;
     font-family: "Montserrat-Regular";
-    color: #E1D7B7 !important;
+    color: #fff !important;
   }
 
   .content-container .content-image p {
@@ -1560,7 +1561,6 @@
   }
 
   .news-title-section h1 {
-    color: #071952;
     font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate;
   }
