@@ -760,7 +760,7 @@
   .initiatives-container .initiatives-content:hover {
     margin: 20px 0;
     width: 650px;
-    height: 600px;
+    height: 690px !important;
   }
 
   .initiatives-container
@@ -790,21 +790,24 @@
   }
 
   .initiatives-banner-text {
-    top: 15% !important;
-    left: 35px !important;
+    top: 20% !important;
+    left: 0px !important;
     text-align: center !important;
   }
 
-  .left-text h1 {
-    font-size: 300px !important;
+  .initiatives-banner-text .left-text h1 {
+    font-size: 190px !important;
     font-family: "LibreBaskerville" !important;
     margin-left: 20px;
     margin-top: 20px;
   }
 
   /* Life Below Water */
-  .right-text h1 {
-    font-size: 40px !important;
+  .initiatives-banner-text .right-text {
+    margin: 0 0 0 30px !important;
+  }
+  .initiatives-banner-text .right-text h1 {
+    font-size: 50px !important;
     font-family: "LibreBaskerville" !important;
   }
 
@@ -1719,23 +1722,23 @@
   }
 
   .initiatives-banner-text {
-    top: 25% !important;
-    left: 40px !important;
+    top: 30% !important;
+    left: 15px !important;
     text-align: center !important;
     width: 90% !important;
   }
 
   /* 14 Text */
-  .left-text h1 {
-    font-size: 170px !important;
+  .initiatives-banner-text .left-text h1 {
+    font-size: 130px !important;
     font-family: "LibreBaskerville" !important;
     margin-left: 20px;
     margin-top: 20px;
   }
 
   /* Life Below Water */
-  .right-text h1 {
-    font-size: 30px !important;
+  .initiatives-banner-text .right-text h1 {
+    font-size: 32px !important;
     font-family: "LibreBaskerville" !important;
   }
 
@@ -2171,6 +2174,37 @@
 
   .donation-card h3 {
     font-size: 20px !important;
+  }
+
+  /* Initiatives Webpage */
+
+  .initiatives-banner-text {
+    top: 30% !important;
+    left: 0px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* 14 Text */
+  .initiatives-banner-text .left-text {
+    margin: 20px 0 0 0 !important;
+  }
+
+  .initiatives-banner-text .left-text h1 {
+    font-size: 100px !important;
+    font-family: "LibreBaskerville" !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+  }
+
+  /* Life Below Water */
+  .initiatives-banner-text .right-text {
+    margin: 0 30px 0 20px !important;
+  }
+
+  .initiatives-banner-text .right-text h1 {
+    font-size: 30px !important;
+    font-family: "LibreBaskerville" !important;
   }
 }
 
