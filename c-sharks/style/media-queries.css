@@ -282,7 +282,7 @@
     display: block;
     font-size: 24px;
     padding: 10px;
-    background-color: #071952;
+    background-color: transparent !important;
     color: #eeeeee;
     position: fixed;
     top: 4px;
@@ -296,7 +296,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #E1D7B7 transparent;
+    background-color: #E1D7B7;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
@@ -317,6 +317,7 @@
     left: 0;
     background-color: #E1D7B7;
     opacity: 1;
+    animation: slideToRight 0.3s ease-in-out;
   }
 
   .sidebar-checkbox:checked~.navbar a {
@@ -324,10 +325,11 @@
   }
 
   .sidebar-checkbox:checked~.toggle-button {
-    transition-delay: 0.10s;
-    animation: fadeIn 0.3s ease-in-out;
+    animation: rotate 0.3s ease-in-out;
     background-color: #E1D7B7;
+    color: #000;
   }
+
 
   .main {
     z-index: 10 !important;
@@ -1255,11 +1257,10 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #E1D7B7 transparent;
+    background-color: #E1D7B7;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
-    opacity: 0;
   }
 
   .navbar a {
@@ -1277,6 +1278,7 @@
     left: 0;
     background-color: #E1D7B7;
     opacity: 1;
+    animation: slideToRight 0.3s ease-in-out;
   }
 
   .sidebar-checkbox:checked~.navbar a {
@@ -1284,8 +1286,9 @@
   }
 
   .sidebar-checkbox:checked~.toggle-button {
-    left: calc(100vw - 38px) !important;
+    animation: rotate 0.3s ease-in-out;
     background-color: #E1D7B7;
+    color: #000;
   }
 
   /* General Styles */
@@ -2075,5 +2078,29 @@
 
   to {
     text-shadow: 0 0 60px #071952, 0 0 70px #eeeeee;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
   }
 }
