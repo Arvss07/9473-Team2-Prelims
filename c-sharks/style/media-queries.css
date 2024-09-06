@@ -430,7 +430,7 @@
 
   /* Description below */
   .title-section p {
-    color: #7C93C3 !important;
+    color: #E1D7B7 !important;
     max-width: 100% !important;
     font-size: 16px !important;
     text-align: center !important;
@@ -1311,6 +1311,7 @@
   .seventy-percent-text {
     font-size: 18px !important;
     font-family: "Montserrat-Regular";
+    color: #7C93C3 !important;
   }
 
   .content-container {
@@ -1325,10 +1326,18 @@
   }
 
   .content-container h2 {
-    color: #5B99C2 !important;
+    color: #E1D7B7 !important;
     font-size: 26px !important;
     text-align: center;
     font-family: "LibreBaskerville";
+  }
+
+  .text-span {
+    color: #7C93C3 !important;
+  }
+
+  .content-holder a {
+    color: #7C93C3 !important;
   }
 
   .content-container p {
@@ -1336,7 +1345,7 @@
     max-width: 100% !important;
     text-align: center !important;
     font-family: "Montserrat-Regular";
-    color: #7C93C3;
+    color: #E1D7B7 !important;
   }
 
   .content-container .content-image p {
@@ -1354,8 +1363,7 @@
     height: 350px;
     border-radius: 20px;
     z-index: 10;
-    background-color: white;
-    background-color: #1e2a5e !important;
+    background-color: #E1D7B7 !important;
   }
 
   .card .card-title {
@@ -1364,7 +1372,7 @@
     text-align: center;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #5B99C2 !important;
+    color: #000000 !important;
   }
 
   .card .card-body {
@@ -1373,11 +1381,12 @@
     text-align: justify;
     margin-bottom: 1.5rem;
     flex-grow: 1;
-    color: #7C93C3 !important;
+    color: #000000 !important;
   }
 
   .card-reference {
     font-family: "Montserrat-Black";
+    color: #55679C !important;
   }
 
   /* Infinite Slider */
