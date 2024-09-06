@@ -91,12 +91,12 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .about-img-box {
     width: 120px !important;
-    height: 550px !important;
+    height: 500px !important;
     margin: 0 10px !important;
   }
 
@@ -107,10 +107,23 @@
   .about-img-box:hover {
     width: 300px !important;
   }
+
+  .initiatives-banner-text {
+    top: 35% !important;
+  }
+  
+  .left-text {
+    font-size: calc(var(--text-size-page-titles) + 30px) !important;
+  }
+  
+  .right-text {
+    font-size: calc(var(--text-size-page-titles) - 50px) !important;
+  }
 }
 
 /* Media Query for 1024 */
 @media screen and (max-width: 1024px) {
+  
   .about-container {
     width: 100%;
     height: 110vh !important;
@@ -137,17 +150,16 @@
     width: 250px !important;
   }
 
-  .initiatives-banner-text{
+  .initiatives-banner-text {
     top: 35% !important;
-    left: 10px !important;
   }
 
-  .initiatives-banner-text .left-text{
-    font-size: 130px;
+  .initiatives-banner-text .left-text h1 {
+    font-size: 170px !important;
   }
 
-  .initiatives-banner-text .right-text{
-    font-size: 50px;
+  .initiatives-banner-text .right-text h1 {
+    font-size: 60px !important;
   }
 
   .main-donation-container{
@@ -176,6 +188,10 @@
 
   .progress-bar {
     width: 100% !important;
+  }
+
+  .footer-content {
+    justify-content: space-evenly;
   }
 
   .footer-column2 {
@@ -1165,8 +1181,6 @@
 /* End of 768px Media Query */
 
 @media screen and (max-width: 480px) {
-
-  /* */
   .main {
     z-index: 10 !important;
     order: 2 !important;
