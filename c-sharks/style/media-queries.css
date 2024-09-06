@@ -2233,13 +2233,13 @@
     font-family: "LibreBaskerville" !important;
   }
 
-  .initiatives-container .initiatives-content {
+  /* .initiatives-container .initiatives-content {
     width: 650px !important;
     height: 525px !important;
     transition: all 0.3s ease-in-out;
     overflow: hidden !important;
     margin-bottom: 20px !important;
-  }
+  } */
 
   .initiatives-container {
     display: flex;
@@ -2249,7 +2249,7 @@
 
   .initiatives-container .initiatives-content {
     width: 100% !important;
-    height: 450px !important;
+    height: 490px !important;
     transition: all 0.3s ease-in-out;
     overflow: hidden !important;
     margin: 0 auto 20px auto !important;
