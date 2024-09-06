@@ -91,12 +91,12 @@
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .about-img-box {
     width: 120px !important;
-    height: 550px !important;
+    height: 500px !important;
     margin: 0 10px !important;
   }
 
@@ -107,10 +107,23 @@
   .about-img-box:hover {
     width: 300px !important;
   }
+
+  .initiatives-banner-text {
+    top: 35% !important;
+  }
+  
+  .left-text {
+    font-size: calc(var(--text-size-page-titles) + 30px) !important;
+  }
+  
+  .right-text {
+    font-size: calc(var(--text-size-page-titles) - 50px) !important;
+  }
 }
 
 /* Media Query for 1024 */
 @media screen and (max-width: 1024px) {
+  
   .about-container {
     width: 100%;
     height: 110vh !important;
@@ -137,17 +150,16 @@
     width: 250px !important;
   }
 
-  .initiatives-banner-text{
+  .initiatives-banner-text {
     top: 35% !important;
-    left: 10px !important;
   }
 
-  .initiatives-banner-text .left-text{
-    font-size: 130px;
+  .initiatives-banner-text .left-text h1 {
+    font-size: 170px !important;
   }
 
-  .initiatives-banner-text .right-text{
-    font-size: 50px;
+  .initiatives-banner-text .right-text h1 {
+    font-size: 60px !important;
   }
 
   .main-donation-container{
@@ -176,6 +188,10 @@
 
   .progress-bar {
     width: 100% !important;
+  }
+
+  .footer-content {
+    justify-content: space-evenly;
   }
 
   .footer-column2 {
@@ -266,7 +282,7 @@
     display: block;
     font-size: 24px;
     padding: 10px;
-    background-color: #071952;
+    background-color: transparent !important;
     color: #eeeeee;
     position: fixed;
     top: 4px;
@@ -280,7 +296,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #E1D7B7 transparent;
+    background-color: #E1D7B7;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
@@ -301,6 +317,7 @@
     left: 0;
     background-color: #E1D7B7;
     opacity: 1;
+    animation: slideToRight 0.3s ease-in-out;
   }
 
   .sidebar-checkbox:checked~.navbar a {
@@ -308,10 +325,11 @@
   }
 
   .sidebar-checkbox:checked~.toggle-button {
-    left: calc(480px - 43px) !important;
-    transition-delay: 0.15s;
+    animation: rotate 0.3s ease-in-out;
     background-color: #E1D7B7;
+    color: #000;
   }
+
 
   .main {
     z-index: 10 !important;
@@ -521,6 +539,7 @@
     order: 4 !important;
     padding: 30px 0 !important;
     background-color: #1e2a5e !important;
+    border: hidden !important;
   }
 
   .infinite-slider::before,
@@ -1166,8 +1185,6 @@
 /* End of 768px Media Query */
 
 @media screen and (max-width: 480px) {
-
-  /* */
   .main {
     z-index: 10 !important;
     order: 2 !important;
@@ -1191,6 +1208,10 @@
   .header h1 {
     font-size: 25px;
     font-family: "LibreBaskerville";
+  }
+
+  .banner-card {
+    background: url('path-to-smaller-image.jpg');
   }
 
   /* Banner Card */
@@ -1240,11 +1261,10 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #E1D7B7 transparent;
+    background-color: #E1D7B7;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
-    opacity: 0;
   }
 
   .navbar a {
@@ -1262,6 +1282,7 @@
     left: 0;
     background-color: #E1D7B7;
     opacity: 1;
+    animation: slideToRight 0.3s ease-in-out;
   }
 
   .sidebar-checkbox:checked~.navbar a {
@@ -1269,8 +1290,9 @@
   }
 
   .sidebar-checkbox:checked~.toggle-button {
-    left: calc(100vw - 38px) !important;
+    animation: rotate 0.3s ease-in-out;
     background-color: #E1D7B7;
+    color: #000;
   }
 
   /* General Styles */
@@ -2027,6 +2049,18 @@
 }
 
 @media screen and (max-width: 425px) {
+  .toggle-button {
+    background-color: transparent;
+  }
+  
+  .navbar {
+    background-color: transparent; 
+  }
+
+  .navbar > a::after {
+    background-color: transparent;
+  }
+
   .banner-text {
     top: 60% !important;
   }
@@ -2069,5 +2103,29 @@
 
   to {
     text-shadow: 0 0 60px #071952, 0 0 70px #eeeeee;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideToRight {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 0;
   }
 }
