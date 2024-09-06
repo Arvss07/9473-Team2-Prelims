@@ -107,7 +107,7 @@
   .about-img-box:hover {
     width: 300px !important;
   }
-4
+
   .initiatives-banner-text {
     top: 35% !important;
   }
@@ -1015,7 +1015,7 @@
 
   .main-donation-content h2 {
     font-size: calc(var(--text-size-header-primary) - 8px) !important;
-    color: #00000;
+    color: #000000;
     text-align: center !important;
     margin-top: 20px;
     margin-bottom: 20px;
