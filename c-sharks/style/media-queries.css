@@ -227,6 +227,7 @@
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
+    background-color: #1E2A5E;
     order: 1 !important;
     padding: 10px 13% !important;
     font-family: "LibreBaskerville";
@@ -504,7 +505,7 @@
     max-width: 100% !important;
     text-align: center !important;
     font-family: "Montserrat-Regular";
-    color: #E1D7B7 !important;
+    color: #fff !important;
   }
 
   .content-container .content-image p {
@@ -600,18 +601,18 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #eeeeee;
-    opacity: 0.5;
+    background-color: #1a274e;
+    opacity: 1;
     background-image: repeating-radial-gradient(
-        circle at 0 0,
-        transparent 0,
-        #eeeeee 40px
-      ),
-      repeating-linear-gradient(#cbceff, #bdc1ff);
+      circle at 0 0,
+      transparent 0,
+      #1e2a5e 18px
+    );
   }
 
   .news-banner-card {
     z-index: 10 !important;
+    background-color: transparent !important;
   }
 
   .news-banner-card img {
@@ -645,7 +646,7 @@
   }
 
   .news-title-section h1 {
-    color: #071952;
+    color: #E1D7B7;
     font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -667,6 +668,7 @@
     text-align: left !important;
     padding-bottom: 5px !important;
     font-family: "LibreBaskerville";
+    color: #E1D7B7;
   }
 
   .news-content-image .info p {
@@ -710,13 +712,13 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 1;
+    background-color: #1a274e;
     background-image: repeating-radial-gradient(
-        circle at 0 0,
-        transparent 0,
-        #eeeeee 40px
-      ),
-      repeating-linear-gradient(#cbceff, #bdc1ff);
+      circle at 0 0,
+      transparent 0,
+      #1e2a5e 18px
+    );
   }
 
   .initiatives-container {
@@ -823,7 +825,7 @@
   .initiatives-title-section .initiatives-title,
   .donation-title-section .initiatives-title {
     position: relative;
-    color: #071952 !important;
+    color: #E1D7B7 !important;
     font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate !important;
     z-index: 10 !important;
@@ -888,16 +890,15 @@
   .btn::before {
     content: "";
     background: linear-gradient(
-      45deg,
-      #37b7c3,
-      #071952,
-      #088395,
-      #1e2a5e,
-      #0d7c66,
-      #3a1078,
-      #37b7c3,
-      #179bae
-    );
+      45deg, 
+      #E1D7B7, 
+      #ffffff, 
+      #e3e8b0, 
+      #faf092, 
+      #E1D7B7, 
+      #f9aa86, 
+      #ffec4c, 
+      #f0d16c) !important;
     position: absolute;
     top: -2px;
     left: -2px;
@@ -951,6 +952,7 @@
   }
 
   .todo-info p {
+    color: #fff;
     font-size: 16px !important;
     font-family: "Montserrat-Regular" !important;
   }
@@ -1248,6 +1250,7 @@
     order: 1;
     padding: 10px 13% !important;
     font-family: "LibreBaskerville";
+    background-color: #1E2A5E;
   }
 
   /* Logo */
@@ -1430,7 +1433,6 @@
     max-width: 100% !important;
     text-align: center !important;
     font-family: "Montserrat-Regular";
-    color: #E1D7B7 !important;
   }
 
   .content-container .content-image p {
@@ -1517,14 +1519,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #eeeeee;
-    opacity: 0.5;
-    background-image: repeating-radial-gradient(
-        circle at 0 0,
-        transparent 0,
-        #eeeeee 40px
-      ),
-      repeating-linear-gradient(#cbceff, #bdc1ff);
+    
   }
 
   /* Text On Image */
@@ -1569,7 +1564,6 @@
   }
 
   .news-title-section h1 {
-    color: #071952;
     font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -1680,9 +1674,15 @@
     transition: all 0.3s ease-in-out !important;
   }
 
+  .initiatives-container .initiatives-content .initiatives-content-info h3 {
+    font-size: var(--text-size-header-secondary);
+    line-height: 30px;
+  }
+
   .initiatives-container .initiatives-content .initiatives-content-info p {
     width: 300px !important;
-    height: 90px;
+    height: 246px;
+    font-size: 17px;
     text-align: justify !important;
     overflow: hidden !important;
   }
