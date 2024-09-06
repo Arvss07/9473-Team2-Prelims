@@ -568,7 +568,23 @@
 
   .infinite-slider::before,
   .infinite-slider::after {
-    display: none !important;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 65px !important;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .infinite-slider::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #1e2a5e);
+  }
+  
+  .infinite-slider::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),
+    #1e2a5e);
   }
 
   .photo-slider img {
