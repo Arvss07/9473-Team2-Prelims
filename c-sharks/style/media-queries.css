@@ -244,10 +244,22 @@
   }
 
   /* Banner Card */
-  .banner-card img {
+  .banner-card video {
     padding-top: 7% !important;
     width: 100% !important;
     height: auto !important;
+  }
+
+  .banner-card{
+    background: transparent !important;
+  }
+
+  .desktop-video {
+    display: none;
+  }
+
+  .mobile-video {
+    display: block !important;
   }
 
   /* Banner Text */
@@ -301,13 +313,17 @@
 
   .navbar a {
     display: block;
-    margin: 10px 0;
+    margin: 10px 0 10px 20px;
     color: #071952;
     font-family: "Montserrat-Regular";
     font-size: 18px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     pointer-events: none;
+  }
+
+  .navbar > a::after {
+    background-color: transparent;
   }
 
   .sidebar-checkbox:checked ~ .navbar {
@@ -544,8 +560,7 @@
 
   .infinite-slider::before,
   .infinite-slider::after {
-    width: 120px;
-    height: 90% !important;
+    display: none !important;
   }
 
   .photo-slider img {
