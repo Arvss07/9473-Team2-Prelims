@@ -305,7 +305,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #e1d7b7;
+    background-color: #1E2A5E;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
@@ -314,7 +314,7 @@
   .navbar a {
     display: block;
     margin: 10px 0 10px 20px;
-    color: #071952;
+    color: #e1d7b7;
     font-family: "Montserrat-Regular";
     font-size: 18px;
     padding: 10px;
@@ -328,7 +328,7 @@
 
   .sidebar-checkbox:checked ~ .navbar {
     left: 0;
-    background-color: #e1d7b7;
+    background-color: #1E2A5E;
     opacity: 1;
     animation: slideToRight 0.3s ease-in-out;
   }
@@ -339,8 +339,8 @@
 
   .sidebar-checkbox:checked ~ .toggle-button {
     animation: rotate 0.3s ease-in-out;
-    background-color: #e1d7b7;
-    color: #000;
+    background-color: #1E2A5E;
+    color: #e1d7b7;
   }
 
   .main {
@@ -475,6 +475,7 @@
   .seventy-percent-text {
     font-size: 18px !important;
     font-family: "Montserrat-Regular";
+    color: #7C93C3 !important;
   }
 
   .content-container {
@@ -503,7 +504,7 @@
     max-width: 100% !important;
     text-align: center !important;
     font-family: "Montserrat-Regular";
-    color: #fff !important;
+    color: #E1D7B7 !important;
   }
 
   .content-container .content-image p {
@@ -513,6 +514,11 @@
 
   .text-span {
     font-family: "Montserrat-Regular";
+    color: #7C93C3 !important;
+  }
+
+  .content-holder a {
+    color: #7C93C3 !important;
   }
 
   .content-image img {
@@ -525,7 +531,7 @@
     max-width: 400px !important;
     height: 350px;
     border-radius: 20px;
-    background-color: #1e2a5e !important;
+    background-color: #E1D7B7 !important;
   }
 
   .card .card-title {
@@ -534,7 +540,7 @@
     font-family: "LibreBaskerville";
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #5b99c2 !important;
+    color: #000000 !important;
   }
 
   .card .card-body {
@@ -543,11 +549,12 @@
     text-align: justify;
     margin-bottom: 1.5rem;
     flex-grow: 1;
-    color: #7c93c3 !important;
+    color: #000000 !important;
   }
 
   .card-reference {
     font-family: "Montserrat-Black";
+    color: #55679C !important;
   }
 
   /* Infinite Slider */
@@ -1312,7 +1319,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #e1d7b7;
+    background-color: #1E2A5E;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
@@ -1321,7 +1328,7 @@
   .navbar a {
     display: block;
     margin: 10px 0 10px 20px;
-    color: #071952;
+    color: #e1d7b7;
     font-size: 18px;
     font-family: "Montserrat-Regular";
     padding: 10px;
@@ -1331,7 +1338,7 @@
 
   .sidebar-checkbox:checked ~ .navbar {
     left: 0;
-    background-color: #e1d7b7;
+    background-color: #1E2A5E;
     opacity: 1;
     animation: slideToRight 0.3s ease-in-out;
   }
@@ -1342,8 +1349,8 @@
 
   .sidebar-checkbox:checked ~ .toggle-button {
     animation: rotate 0.3s ease-in-out;
-    background-color: #e1d7b7;
-    color: #000;
+    background-color: #1E2A5E;
+    color: #e1d7b7;
   }
 
   /* General Styles */
@@ -1377,7 +1384,7 @@
 
   /* Description below */
   .title-section p {
-    color: #7c93c3;
+    color: #E1D7B7;
     max-width: 100% !important;
     font-size: 16px !important;
     text-align: center !important;
