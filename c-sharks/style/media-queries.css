@@ -296,7 +296,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #071952 transparent;
+    background-color: #E1D7B7 transparent;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
@@ -305,7 +305,7 @@
   .navbar a {
     display: block;
     margin: 10px 0;
-    color: #E1D7B7;
+    color: #071952;
     font-family: "Montserrat-Regular";
     font-size: 18px;
     padding: 10px;
@@ -324,8 +324,9 @@
   }
 
   .sidebar-checkbox:checked~.toggle-button {
-    left: calc(480px - 40px);
+    left: calc(480px - 43px) !important;
     transition-delay: 0.15s;
+    background-color: #E1D7B7;
   }
 
   .main {
@@ -463,7 +464,7 @@
   }
 
   .content-container:hover{
-    background-color: #1e2a5e !important;
+    background-color: transparent !important;
   }
 
   /* Pictures in Containers*/
@@ -1253,7 +1254,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #071952 transparent;
+    background-color: #E1D7B7 transparent;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
@@ -1263,7 +1264,7 @@
   .navbar a {
     display: block;
     margin: 10px 0 10px 20px;
-    color: #E1D7B7;
+    color: #071952;
     font-size: 18px;
     font-family: "Montserrat-Regular";
     padding: 10px;
@@ -1282,7 +1283,8 @@
   }
 
   .sidebar-checkbox:checked~.toggle-button {
-    left: calc(100vw - 33px);
+    left: calc(100vw - 38px) !important;
+    background-color: #E1D7B7;
   }
 
   /* General Styles */
