@@ -1382,7 +1382,7 @@
   .infinite-slider {
     order: 4;
     padding: 30px 0 !important;
-    background-color: transparent !important;
+    background-color: #1e2a5e !important;
   }
 
   .infinite-slider::before,
