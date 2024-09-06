@@ -227,6 +227,7 @@
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
+    background-color: #1E2A5E;
     order: 1 !important;
     padding: 10px 13% !important;
     font-family: "LibreBaskerville";
@@ -504,7 +505,7 @@
     max-width: 100% !important;
     text-align: center !important;
     font-family: "Montserrat-Regular";
-    color: #E1D7B7 !important;
+    color: #fff !important;
   }
 
   .content-container .content-image p {
@@ -567,7 +568,23 @@
 
   .infinite-slider::before,
   .infinite-slider::after {
-    display: none !important;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 65px !important;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .infinite-slider::before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #1e2a5e);
+  }
+  
+  .infinite-slider::after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0),
+    #1e2a5e);
   }
 
   .photo-slider img {
@@ -711,13 +728,13 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 1;
+    background-color: #1a274e;
     background-image: repeating-radial-gradient(
-        circle at 0 0,
-        transparent 0,
-        #eeeeee 40px
-      ),
-      repeating-linear-gradient(#cbceff, #bdc1ff);
+      circle at 0 0,
+      transparent 0,
+      #1e2a5e 18px
+    );
   }
 
   .initiatives-container {
@@ -731,7 +748,6 @@
     height: 450px !important;
     transition: all 0.3s ease-in-out;
     overflow: hidden !important;
-    text-overflow: hidden !important;
     margin-bottom: 20px !important;
   }
 
@@ -761,7 +777,7 @@
   .initiatives-container .initiatives-content:hover {
     margin: 20px 0;
     width: 650px;
-    height: 600px;
+    height: 690px !important;
   }
 
   .initiatives-container
@@ -791,21 +807,24 @@
   }
 
   .initiatives-banner-text {
-    top: 15% !important;
-    left: 35px !important;
+    top: 20% !important;
+    left: 0px !important;
     text-align: center !important;
   }
 
-  .left-text h1 {
-    font-size: 300px !important;
+  .initiatives-banner-text .left-text h1 {
+    font-size: 190px !important;
     font-family: "LibreBaskerville" !important;
     margin-left: 20px;
     margin-top: 20px;
   }
 
   /* Life Below Water */
-  .right-text h1 {
-    font-size: 40px !important;
+  .initiatives-banner-text .right-text {
+    margin: 0 0 0 30px !important;
+  }
+  .initiatives-banner-text .right-text h1 {
+    font-size: 50px !important;
     font-family: "LibreBaskerville" !important;
   }
 
@@ -822,7 +841,7 @@
   .initiatives-title-section .initiatives-title,
   .donation-title-section .initiatives-title {
     position: relative;
-    color: #071952 !important;
+    color: #E1D7B7 !important;
     font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate !important;
     z-index: 10 !important;
@@ -949,6 +968,7 @@
   }
 
   .todo-info p {
+    color: #fff;
     font-size: 16px !important;
     font-family: "Montserrat-Regular" !important;
   }
@@ -1560,7 +1580,6 @@
   }
 
   .news-title-section h1 {
-    color: #071952;
     font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -1653,7 +1672,6 @@
     height: 660px !important;
     transition: all 0.3s ease-in-out;
     overflow: hidden !important;
-    text-overflow: hidden !important;
   }
 
   .initiatives-container .initiatives-content .initiatives-content-image {
@@ -1688,7 +1706,7 @@
   .initiatives-container .initiatives-content:hover {
     margin: 20px 0;
     width: 500px;
-    height: 820px;
+    height: 820px !important;
   }
 
   .initiatives-container
@@ -1718,15 +1736,15 @@
   }
 
   .initiatives-banner-text {
-    top: 29% !important;
-    left: 34px !important;
+    top: 30% !important;
+    left: 15px !important;
     text-align: center !important;
     width: 90% !important;
   }
 
   /* 14 Text */
   .initiatives-banner-text .left-text h1 {
-    font-size: 135px !important;
+    font-size: 130px !important;
     font-family: "LibreBaskerville" !important;
     margin-left: 20px;
     margin-top: 20px;
@@ -1734,8 +1752,7 @@
 
   /* Life Below Water */
   .initiatives-banner-text .right-text h1 {
-    width: 200px;
-    font-size: 45px !important;
+    font-size: 32px !important;
     font-family: "LibreBaskerville" !important;
   }
 
@@ -1766,6 +1783,7 @@
 
   .initiatives-content {
     display: flex;
+    max-width: 390px !important;
     flex-direction: column;
     align-items: center;
     margin-bottom: 15px !important;
@@ -2171,6 +2189,54 @@
 
   .donation-card h3 {
     font-size: 20px !important;
+  }
+
+  /* Initiatives Webpage */
+
+  .initiatives-banner-text {
+    top: 30% !important;
+    left: 0px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  /* 14 Text */
+  .initiatives-banner-text .left-text {
+    margin: 20px 0 0 0 !important;
+  }
+
+  .initiatives-banner-text .left-text h1 {
+    font-size: 100px !important;
+    font-family: "LibreBaskerville" !important;
+    margin-left: 0px !important;
+    margin-top: 0px !important;
+  }
+
+  /* Life Below Water */
+  .initiatives-banner-text .right-text {
+    margin: 0 30px 0 15px !important;
+  }
+
+  .initiatives-banner-text .right-text h1 {
+    font-size: 30px !important;
+    font-family: "LibreBaskerville" !important;
+  }
+
+  .initiatives-container .initiatives-content {
+    width: 650px !important;
+    height: 525px !important;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden !important;
+    margin-bottom: 20px !important;
+  }
+
+  .initiatives-content {
+    display: flex;
+    max-width: 340px !important;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px !important;
+    z-index: 10;
   }
 }
 
