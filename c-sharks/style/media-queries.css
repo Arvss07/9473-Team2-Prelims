@@ -123,6 +123,22 @@
 
 /* Media Query for 1024 */
 @media screen and (max-width: 1024px) {
+  .banner-card video {
+    padding-top: 7% !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .banner-text {
+    top: 73% !important;
+    left: 10px;
+    padding: 0% !important;
+  }
+
+  .banner-text h2 {
+    font-size: 70px !important;
+  }
+
   .about-container {
     width: 100%;
     height: 110vh !important;
@@ -227,7 +243,7 @@
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
-    background-color: #1E2A5E;
+    background-color: #1e2a5e;
     order: 1 !important;
     padding: 10px 13% !important;
     font-family: "LibreBaskerville";
@@ -251,7 +267,7 @@
     height: auto !important;
   }
 
-  .banner-card{
+  .banner-card {
     background: transparent !important;
   }
 
@@ -306,7 +322,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #1E2A5E;
+    background-color: #1e2a5e;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
@@ -329,7 +345,7 @@
 
   .sidebar-checkbox:checked ~ .navbar {
     left: 0;
-    background-color: #1E2A5E;
+    background-color: #1e2a5e;
     opacity: 1;
     animation: slideToRight 0.3s ease-in-out;
   }
@@ -340,7 +356,7 @@
 
   .sidebar-checkbox:checked ~ .toggle-button {
     animation: rotate 0.3s ease-in-out;
-    background-color: #1E2A5E;
+    background-color: #1e2a5e;
     color: #e1d7b7;
   }
 
@@ -465,7 +481,7 @@
 
   /* Description below */
   .title-section p {
-    color: #E1D7B7 !important;
+    color: #e1d7b7 !important;
     max-width: 100% !important;
     font-size: 16px !important;
     text-align: center !important;
@@ -476,7 +492,7 @@
   .seventy-percent-text {
     font-size: 18px !important;
     font-family: "Montserrat-Regular";
-    color: #7C93C3 !important;
+    color: #7c93c3 !important;
   }
 
   .content-container {
@@ -494,7 +510,7 @@
   }
 
   .content-container h2 {
-    color: #E1D7B7 !important;
+    color: #e1d7b7 !important;
     font-size: 24px !important;
     text-align: center;
     font-family: "LibreBaskerville";
@@ -515,11 +531,11 @@
 
   .text-span {
     font-family: "Montserrat-Regular";
-    color: #7C93C3 !important;
+    color: #7c93c3 !important;
   }
 
   .content-holder a {
-    color: #7C93C3 !important;
+    color: #7c93c3 !important;
   }
 
   .content-image img {
@@ -532,7 +548,7 @@
     max-width: 400px !important;
     height: 350px;
     border-radius: 20px;
-    background-color: #E1D7B7 !important;
+    background-color: #e1d7b7 !important;
   }
 
   .card .card-title {
@@ -555,7 +571,7 @@
 
   .card-reference {
     font-family: "Montserrat-Black";
-    color: #55679C !important;
+    color: #55679c !important;
   }
 
   /* Infinite Slider */
@@ -580,11 +596,10 @@
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), #1e2a5e);
   }
-  
+
   .infinite-slider::after {
     right: 0;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0),
-    #1e2a5e);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #1e2a5e);
   }
 
   .photo-slider img {
@@ -662,7 +677,7 @@
   }
 
   .news-title-section h1 {
-    color: #E1D7B7;
+    color: #e1d7b7;
     font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate;
   }
@@ -684,7 +699,7 @@
     text-align: left !important;
     padding-bottom: 5px !important;
     font-family: "LibreBaskerville";
-    color: #E1D7B7;
+    color: #e1d7b7;
   }
 
   .news-content-image .info p {
@@ -748,7 +763,7 @@
   }
 
   .initiatives-container .initiatives-content {
-    background-color: #E1D7B7;
+    background-color: #e1d7b7;
     width: 650px !important;
     height: 450px !important;
     transition: all 0.3s ease-in-out;
@@ -781,7 +796,7 @@
 
   .initiatives-container .initiatives-content:hover {
     margin: 20px 0;
-    background-color: #E1D7B7;
+    background-color: #e1d7b7;
     width: 650px;
     height: 690px !important;
   }
@@ -798,7 +813,6 @@
     height: 150px !important;
   }
 
-  /* PAAYOSSSSSS */
   .initiatives-container .initiatives-content .initiatives-content-info .btn {
     display: flex;
     flex-direction: column !important;
@@ -848,7 +862,7 @@
   .initiatives-title-section .initiatives-title,
   .donation-title-section .initiatives-title {
     position: relative;
-    color: #E1D7B7 !important;
+    color: #e1d7b7 !important;
     font-family: "LibreBaskerville" !important;
     animation: glow 1s ease-in-out infinite alternate !important;
     z-index: 10 !important;
@@ -932,7 +946,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #1E2A5E !important;
+    background: #1e2a5e !important;
     left: 0;
     top: 0;
     border-radius: 10px;
@@ -1056,7 +1070,7 @@
     text-align: center;
     height: 100%;
     color: #fff;
-    background: #1E2A5E !important;
+    background: #1e2a5e !important;
     border-radius: 30px;
   }
 
@@ -1078,7 +1092,7 @@
 
   .other-donations-title-section .other-donations-title {
     font-size: 35px !important;
-    color: #E1D7B7 !important;
+    color: #e1d7b7 !important;
     text-align: center !important;
     font-family: "LibreBaskerville" !important;
   }
@@ -1093,7 +1107,7 @@
   }
 
   .donation-card {
-    background-color: #E1D7B7 !important;
+    background-color: #e1d7b7 !important;
   }
 
   .main-donation-container p {
@@ -1104,7 +1118,7 @@
   .donate-button {
     text-decoration: none;
     padding: 1rem 1rem !important;
-    background: #1E2A5E !important;
+    background: #1e2a5e !important;
     letter-spacing: 1.5px;
     color: #eeeeee;
     font-size: var(--text-size-anchor);
@@ -1120,7 +1134,7 @@
     text-decoration: underline;
     padding: 1rem 1rem !important;
     letter-spacing: 1.5px;
-    color: #1E2A5E !important;
+    color: #1e2a5e !important;
     font-size: var(--text-size-anchor);
     font-weight: bold;
     cursor: pointer;
@@ -1131,7 +1145,7 @@
   }
 
   .learnmore-button a {
-    color: #1E2A5E !important;
+    color: #1e2a5e !important;
   }
 
   .about-donation p {
@@ -1216,7 +1230,7 @@
   }
 
   .hero-title {
-    color: #E1D7B7 !important;
+    color: #e1d7b7 !important;
     font-size: 65px !important;
     text-align: center;
     font-family: "LibreBaskerville";
@@ -1261,7 +1275,7 @@
   }
 
   .team-card {
-    background-color: #E1D7B7 !important;
+    background-color: #e1d7b7 !important;
     width: 100% !important;
     max-width: 250px !important;
     height: 100px;
@@ -1284,7 +1298,7 @@
     order: 1;
     padding: 10px 13% !important;
     font-family: "LibreBaskerville";
-    background-color: #1E2A5E;
+    background-color: #1e2a5e;
   }
 
   /* Logo */
@@ -1305,10 +1319,10 @@
     height: auto !important;
   }
 
-  .banner-card{
+  .banner-card {
     background: transparent !important;
   }
-  
+
   .desktop-video {
     display: none;
   }
@@ -1357,7 +1371,7 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #1E2A5E;
+    background-color: #1e2a5e;
     padding-top: 60px;
     z-index: 2;
     transition: left 0.3s ease-in-out;
@@ -1376,7 +1390,7 @@
 
   .sidebar-checkbox:checked ~ .navbar {
     left: 0;
-    background-color: #1E2A5E;
+    background-color: #1e2a5e;
     opacity: 1;
     animation: slideToRight 0.3s ease-in-out;
   }
@@ -1387,7 +1401,7 @@
 
   .sidebar-checkbox:checked ~ .toggle-button {
     animation: rotate 0.3s ease-in-out;
-    background-color: #1E2A5E;
+    background-color: #1e2a5e;
     color: #e1d7b7;
   }
 
@@ -1422,7 +1436,7 @@
 
   /* Description below */
   .title-section p {
-    color: #E1D7B7;
+    color: #e1d7b7;
     max-width: 100% !important;
     font-size: 16px !important;
     text-align: center !important;
@@ -1433,7 +1447,7 @@
   .seventy-percent-text {
     font-size: 18px !important;
     font-family: "Montserrat-Regular";
-    color: #7C93C3 !important;
+    color: #7c93c3 !important;
   }
 
   .content-container {
@@ -1448,18 +1462,18 @@
   }
 
   .content-container h2 {
-    color: #E1D7B7 !important;
+    color: #e1d7b7 !important;
     font-size: 26px !important;
     text-align: center;
     font-family: "LibreBaskerville";
   }
 
   .text-span {
-    color: #7C93C3 !important;
+    color: #7c93c3 !important;
   }
 
   .content-holder a {
-    color: #7C93C3 !important;
+    color: #7c93c3 !important;
   }
 
   .content-container p {
@@ -1484,7 +1498,7 @@
     height: 350px;
     border-radius: 20px;
     z-index: 10;
-    background-color: #E1D7B7 !important;
+    background-color: #e1d7b7 !important;
   }
 
   .card .card-title {
@@ -1507,7 +1521,7 @@
 
   .card-reference {
     font-family: "Montserrat-Black";
-    color: #55679C !important;
+    color: #55679c !important;
   }
 
   /* Infinite Slider */
@@ -1553,7 +1567,6 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    
   }
 
   /* Text On Image */
@@ -1670,7 +1683,6 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    
   }
 
   .initiatives-container {
@@ -2151,9 +2163,9 @@
   .toggle-button {
     background-color: transparent;
   }
-  
+
   .navbar {
-    background-color: transparent; 
+    background-color: transparent;
   }
 
   .navbar > a::after {
