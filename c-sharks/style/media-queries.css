@@ -240,6 +240,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
@@ -339,22 +340,22 @@
     pointer-events: none;
   }
 
-  .navbar > a::after {
+  .navbar>a::after {
     background-color: transparent;
   }
 
-  .sidebar-checkbox:checked ~ .navbar {
+  .sidebar-checkbox:checked~.navbar {
     left: 0;
     background-color: #1e2a5e;
     opacity: 1;
     animation: slideToRight 0.3s ease-in-out;
   }
 
-  .sidebar-checkbox:checked ~ .navbar a {
+  .sidebar-checkbox:checked~.navbar a {
     pointer-events: auto;
   }
 
-  .sidebar-checkbox:checked ~ .toggle-button {
+  .sidebar-checkbox:checked~.toggle-button {
     animation: rotate 0.3s ease-in-out;
     background-color: #1e2a5e;
     color: #e1d7b7;
@@ -379,11 +380,9 @@
     height: 100%;
     background-color: #1a274e;
     opacity: 1;
-    background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #1e2a5e 18px
-    );
+    background-image: repeating-radial-gradient(circle at 0 0,
+        transparent 0,
+        #1e2a5e 18px);
   }
 
   /* Footer */
@@ -634,11 +633,9 @@
     height: 100%;
     background-color: #1a274e;
     opacity: 1;
-    background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #1e2a5e 18px
-    );
+    background-image: repeating-radial-gradient(circle at 0 0,
+        transparent 0,
+        #1e2a5e 18px);
   }
 
   .news-banner-card {
@@ -745,11 +742,9 @@
     height: 100%;
     opacity: 1;
     background-color: #1a274e;
-    background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #1e2a5e 18px
-    );
+    background-image: repeating-radial-gradient(circle at 0 0,
+        transparent 0,
+        #1e2a5e 18px);
   }
 
   .main-donation-wave {
@@ -801,10 +796,7 @@
     height: 690px !important;
   }
 
-  .initiatives-container
-    .initiatives-content:hover
-    .initiatives-content-info
-    p {
+  .initiatives-container .initiatives-content:hover .initiatives-content-info p {
     height: auto;
   }
 
@@ -844,6 +836,7 @@
   .initiatives-banner-text .right-text {
     margin: 0 0 0 30px !important;
   }
+
   .initiatives-banner-text .right-text h1 {
     font-size: 50px !important;
     font-family: "LibreBaskerville" !important;
@@ -1045,13 +1038,21 @@
 
   .progress-bar {
     position: relative;
-    width: 450px !important;
+    width: 100% !important;
     height: 30px;
     border-radius: 30px;
     background-color: #eeeeee;
     align-items: center !important;
     justify-content: center !important;
     margin: 0 auto;
+  }
+
+  .donate-button a {
+    padding: 0;
+  }
+
+  .learnmore-button a {
+    padding: 0;
   }
 
   .main-donation-progress {
@@ -1172,11 +1173,9 @@
     height: 100%;
     background-color: #1a274e;
     opacity: 1;
-    background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #1e2a5e 18px
-    );
+    background-image: repeating-radial-gradient(circle at 0 0,
+        transparent 0,
+        #1e2a5e 18px);
   }
 
   .about-gallery {
@@ -1196,11 +1195,9 @@
 
   .about-img-box::before,
   .about-img-box::after {
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.4),
-      rgba(211, 202, 202, 0.025)
-    ) !important;
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.4),
+        rgba(211, 202, 202, 0.025)) !important;
   }
 
   .about-img-box h3 {
@@ -1222,11 +1219,9 @@
 
   .about-img-box::before,
   .about-img-box::after {
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.4),
-      rgba(211, 202, 202, 0.025)
-    ) !important;
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.4),
+        rgba(211, 202, 202, 0.025)) !important;
   }
 
   .hero-title {
@@ -1388,18 +1383,18 @@
     pointer-events: none;
   }
 
-  .sidebar-checkbox:checked ~ .navbar {
+  .sidebar-checkbox:checked~.navbar {
     left: 0;
     background-color: #1e2a5e;
     opacity: 1;
     animation: slideToRight 0.3s ease-in-out;
   }
 
-  .sidebar-checkbox:checked ~ .navbar a {
+  .sidebar-checkbox:checked~.navbar a {
     pointer-events: auto;
   }
 
-  .sidebar-checkbox:checked ~ .toggle-button {
+  .sidebar-checkbox:checked~.toggle-button {
     animation: rotate 0.3s ease-in-out;
     background-color: #1e2a5e;
     color: #e1d7b7;
@@ -1418,11 +1413,9 @@
     height: 100%;
     background-color: #1a274e;
     opacity: 1;
-    background-image: repeating-radial-gradient(
-      circle at 0 0,
-      transparent 0,
-      #1e2a5e 18px
-    );
+    background-image: repeating-radial-gradient(circle at 0 0,
+        transparent 0,
+        #1e2a5e 18px);
   }
 
   /* Content */
@@ -1733,10 +1726,7 @@
     height: 820px !important;
   }
 
-  .initiatives-container
-    .initiatives-content:hover
-    .initiatives-content-info
-    p {
+  .initiatives-container .initiatives-content:hover .initiatives-content-info p {
     height: auto;
   }
 
@@ -2014,11 +2004,9 @@
 
   .about-img-box::before,
   .about-img-box::after {
-    background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.4),
-      rgba(211, 202, 202, 0.025)
-    ) !important;
+    background: linear-gradient(to top,
+        rgba(0, 0, 0, 0.4),
+        rgba(211, 202, 202, 0.025)) !important;
   }
 
   .hero-title {
@@ -2168,13 +2156,14 @@
     background-color: transparent;
   }
 
-  .navbar > a::after {
+  .navbar>a::after {
     background-color: transparent;
   }
 
   .banner-text {
     top: 60% !important;
   }
+
   .footer-column2 {
     text-align: center;
     column-gap: 10px;
@@ -2193,6 +2182,7 @@
     font-size: 15px !important;
     font-weight: bold !important;
   }
+
   .donation-card {
     width: 100% !important;
   }
@@ -2231,6 +2221,7 @@
   .initiatives-banner-text .right-text {
     margin: 20px 30px 0 15px !important;
   }
+
   .initiatives-banner-text .right-text h1 {
     width: 250px;
     font-size: 30px !important;
@@ -2254,6 +2245,7 @@
     align-items: center;
     z-index: 10;
   }
+
   .initiatives-container .initiatives-content .initiatives-content-info h3 {
     line-height: 30px;
   }
