@@ -10,14 +10,11 @@ main {
   overflow: hidden;
 }
 
-/* .banner-video {
-  position: absolute;
-  top: 0;
-  left: 0;
+.banner-video {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
-} */
+}
 
 .mobile-video {
   display: none;
@@ -120,7 +117,7 @@ main {
 
 .content-holder a {
   font-size: var(--text-size-anchor);
-  color: #37B7C3;
+  color: #37b7c3;
   text-decoration: none;
 }
 
