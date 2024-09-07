@@ -122,7 +122,7 @@
 }
 
 /* Media Query for 1024 */
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .banner-card video {
     padding-top: 7% !important;
     width: 100% !important;
@@ -240,7 +240,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
   /* HOME PAGE */
   /* Save Our Seas Text */
   .header {
@@ -340,22 +339,22 @@
     pointer-events: none;
   }
 
-  .navbar>a::after {
+  .navbar > a::after {
     background-color: transparent;
   }
 
-  .sidebar-checkbox:checked~.navbar {
+  .sidebar-checkbox:checked ~ .navbar {
     left: 0;
     background-color: #1e2a5e;
     opacity: 1;
     animation: slideToRight 0.3s ease-in-out;
   }
 
-  .sidebar-checkbox:checked~.navbar a {
+  .sidebar-checkbox:checked ~ .navbar a {
     pointer-events: auto;
   }
 
-  .sidebar-checkbox:checked~.toggle-button {
+  .sidebar-checkbox:checked ~ .toggle-button {
     animation: rotate 0.3s ease-in-out;
     background-color: #1e2a5e;
     color: #e1d7b7;
@@ -380,9 +379,11 @@
     height: 100%;
     background-color: #1a274e;
     opacity: 1;
-    background-image: repeating-radial-gradient(circle at 0 0,
-        transparent 0,
-        #1e2a5e 18px);
+    background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #1e2a5e 18px
+    );
   }
 
   /* Footer */
@@ -633,9 +634,11 @@
     height: 100%;
     background-color: #1a274e;
     opacity: 1;
-    background-image: repeating-radial-gradient(circle at 0 0,
-        transparent 0,
-        #1e2a5e 18px);
+    background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #1e2a5e 18px
+    );
   }
 
   .news-banner-card {
@@ -742,9 +745,11 @@
     height: 100%;
     opacity: 1;
     background-color: #1a274e;
-    background-image: repeating-radial-gradient(circle at 0 0,
-        transparent 0,
-        #1e2a5e 18px);
+    background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #1e2a5e 18px
+    );
   }
 
   .main-donation-wave {
@@ -796,7 +801,10 @@
     height: 690px !important;
   }
 
-  .initiatives-container .initiatives-content:hover .initiatives-content-info p {
+  .initiatives-container
+    .initiatives-content:hover
+    .initiatives-content-info
+    p {
     height: auto;
   }
 
@@ -1173,9 +1181,11 @@
     height: 100%;
     background-color: #1a274e;
     opacity: 1;
-    background-image: repeating-radial-gradient(circle at 0 0,
-        transparent 0,
-        #1e2a5e 18px);
+    background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #1e2a5e 18px
+    );
   }
 
   .about-gallery {
@@ -1195,9 +1205,11 @@
 
   .about-img-box::before,
   .about-img-box::after {
-    background: linear-gradient(to top,
-        rgba(0, 0, 0, 0.4),
-        rgba(211, 202, 202, 0.025)) !important;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4),
+      rgba(211, 202, 202, 0.025)
+    ) !important;
   }
 
   .about-img-box h3 {
@@ -1219,9 +1231,11 @@
 
   .about-img-box::before,
   .about-img-box::after {
-    background: linear-gradient(to top,
-        rgba(0, 0, 0, 0.4),
-        rgba(211, 202, 202, 0.025)) !important;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4),
+      rgba(211, 202, 202, 0.025)
+    ) !important;
   }
 
   .hero-title {
@@ -1383,18 +1397,18 @@
     pointer-events: none;
   }
 
-  .sidebar-checkbox:checked~.navbar {
+  .sidebar-checkbox:checked ~ .navbar {
     left: 0;
     background-color: #1e2a5e;
     opacity: 1;
     animation: slideToRight 0.3s ease-in-out;
   }
 
-  .sidebar-checkbox:checked~.navbar a {
+  .sidebar-checkbox:checked ~ .navbar a {
     pointer-events: auto;
   }
 
-  .sidebar-checkbox:checked~.toggle-button {
+  .sidebar-checkbox:checked ~ .toggle-button {
     animation: rotate 0.3s ease-in-out;
     background-color: #1e2a5e;
     color: #e1d7b7;
@@ -1413,9 +1427,11 @@
     height: 100%;
     background-color: #1a274e;
     opacity: 1;
-    background-image: repeating-radial-gradient(circle at 0 0,
-        transparent 0,
-        #1e2a5e 18px);
+    background-image: repeating-radial-gradient(
+      circle at 0 0,
+      transparent 0,
+      #1e2a5e 18px
+    );
   }
 
   /* Content */
@@ -1726,7 +1742,10 @@
     height: 820px !important;
   }
 
-  .initiatives-container .initiatives-content:hover .initiatives-content-info p {
+  .initiatives-container
+    .initiatives-content:hover
+    .initiatives-content-info
+    p {
     height: auto;
   }
 
@@ -2004,9 +2023,11 @@
 
   .about-img-box::before,
   .about-img-box::after {
-    background: linear-gradient(to top,
-        rgba(0, 0, 0, 0.4),
-        rgba(211, 202, 202, 0.025)) !important;
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4),
+      rgba(211, 202, 202, 0.025)
+    ) !important;
   }
 
   .hero-title {
@@ -2156,7 +2177,7 @@
     background-color: transparent;
   }
 
-  .navbar>a::after {
+  .navbar > a::after {
     background-color: transparent;
   }
 
